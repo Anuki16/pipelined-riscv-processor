@@ -9,11 +9,13 @@ module execute #(
 )(
 	input logic clk, rstn,
 	input logic [REG_BITS + CTRL_SIZE + REG_WIDTH*3 + 32 - 1:0] dec_exc_reg,
-	output logic [REG_BITS + 1 + CTRL_SIZE-7 + REG_WIDTH*3 + 1 - 1:0] exc_mem_reg
+	output logic [REG_BITS + 1 + CTRL_SIZE-7 + REG_WIDTH*3 - 1:0] exc_mem_reg,
+	output logic alu_zero,
+	output logic [2:0] branch_type,
+	output logic [31:0] target_pc, pc_with_offset
 );
 	logic signed [REG_WIDTH-1:0] bus_a, bus_b;
 	logic signed [REG_WIDTH-1:0] alu_out;
-	logic alu_zero;
 	
 	logic [ALU_SEL_WIDTH-1:0] alu_sel;
 	logic alu_a_sel, alu_b_sel;
@@ -35,7 +37,10 @@ module execute #(
 	assign bus_b = alu_b_sel? imm_data : read_data2;	// immediate if 1
 	
 	assign return_pc = pc + 4;
-	assign exc_mem_reg = {rd, write_en, ctrl_signals[CTRL_SIZE-8:0], alu_out, alu_zero, read_data2, return_pc};
+	assign target_pc = alu_out;
+	assign pc_with_offset = pc + imm_data;
+	assign exc_mem_reg = {rd, write_en, ctrl_signals[CTRL_SIZE-8:0], alu_out, read_data2, return_pc};
+	assign branch_type = ctrl_signals[CTRL_SIZE-15];
 			
 endmodule
 	

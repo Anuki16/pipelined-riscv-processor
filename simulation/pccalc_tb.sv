@@ -5,7 +5,7 @@
 module pccalc_tb();
 
 	logic clk = 0, rstn = 0;
-	logic [31:0] pc_offset;		
+	logic [31:0] pc_with_offset;		
 	logic [31:0] target_pc, pc;
 	logic [2:0] branch_type;
 	logic alu_zero = 0, alu_neg = 0;
@@ -20,7 +20,7 @@ module pccalc_tb();
 		@(posedge clk) #1 rstn = 0;
 		#10 rstn = 1;
 		branch_type = 0;
-		pc_offset = 32'b1100;
+		pc_with_offset = 32'b1100;
 		
 		#10 branch_type = `JMP_JAL;
 		#10 branch_type = `JMP_BEQ;

@@ -7,7 +7,7 @@ module memory #(
 	parameter REG_BITS = $clog2(REG_COUNT)
 )(
 	input logic clk, rstn,
-	input logic [REG_BITS + 1 + CTRL_SIZE-7 + REG_WIDTH*3 + 1 - 1:0] exc_mem_reg,
+	input logic [REG_BITS + 1 + CTRL_SIZE-7 + REG_WIDTH*3 - 1:0] exc_mem_reg,
 	output logic [1 + REG_BITS + REG_WIDTH*3 + 2 - 1:0] mem_wb_reg
 );
 	logic [REG_WIDTH-1:0] mem_addr; 
@@ -18,7 +18,7 @@ module memory #(
 	logic load_unsigned;
 	
 	logic [REG_BITS-1:0] rd;
-	logic write_en, alu_zero;
+	logic write_en;
 	logic [CTRL_SIZE-8:0] ctrl_signals;
 	logic [REG_WIDTH-1:0] alu_out, read_data2, return_pc;
 	logic [1:0] write_src_sel;
@@ -27,7 +27,7 @@ module memory #(
 					  .DATA_WIDTH(REG_WIDTH),
 					  .NUM_LOCS(NUM_MEM_LOCS)) datamem_obj (.*);
 					  
-	assign {rd, write_en, ctrl_signals, alu_out, alu_zero, read_data2, return_pc} = exc_mem_reg;
+	assign {rd, write_en, ctrl_signals, alu_out, read_data2, return_pc} = exc_mem_reg;
 	
 	assign mem_addr = alu_out;		// Calculated mem address
 	assign mem_write_data = read_data2;	

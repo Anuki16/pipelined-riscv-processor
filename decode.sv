@@ -7,15 +7,16 @@ module decode #(
 )(
 	input logic clk, rstn,
 	input logic [63:0] fetch_dec_reg,
-	input logic [37:0] mem_wb_reg,
+	input logic write_en,
+	input logic [REG_BITS-1:0] write_reg,
+	input logic signed [REG_WIDTH-1:0] write_data,
 	output logic [REG_BITS + CTRL_SIZE + REG_WIDTH*3 + 32 - 1:0] dec_exc_reg
 );
-	logic [REG_BITS-1:0] read_reg1, read_reg2, write_reg, rd;
-	logic signed [REG_WIDTH-1:0] read_data1, read_data2, write_data, imm_data;
+	logic [REG_BITS-1:0] read_reg1, read_reg2, rd;
+	logic signed [REG_WIDTH-1:0] read_data1, read_data2, imm_data;
 	logic [31:0] instruction;
 	logic [31:0] pc;
 	
-	logic write_en;
 	logic ex_no_stay;
 	logic [CTRL_SIZE-1:0] ctrl_signals;
 
@@ -30,7 +31,6 @@ module decode #(
 	controller #(.CTRL_SIZE(CTRL_SIZE)) ctrl_obj (.*);
 	
 	assign {instruction, pc} = fetch_dec_reg;
-	assign {write_en, write_reg, write_data} = mem_wb_reg;
 	assign ex_no_stay = 1;
 	
 	assign read_reg1 = instruction[19:15];

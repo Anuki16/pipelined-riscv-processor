@@ -1,5 +1,5 @@
 Flow report for riscv_single_cycle_processor
-Thu Dec 28 22:06:47 2023
+Thu Dec 28 23:19:33 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Dec 28 22:06:47 2023       ;
+; Flow Status                        ; Successful - Thu Dec 28 23:19:33 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; riscv_single_cycle_processor                ;
-; Top-level Entity Name              ; writeback                                   ;
+; Top-level Entity Name              ; riscv_pipelined_processor                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -63,29 +63,29 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+------------------------------+
 ; Option            ; Setting                      ;
 +-------------------+------------------------------+
-; Start date & time ; 12/28/2023 22:06:37          ;
+; Start date & time ; 12/28/2023 23:19:21          ;
 ; Main task         ; Compilation                  ;
 ; Revision Name     ; riscv_single_cycle_processor ;
 +-------------------+------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                           ;
-+-------------------------------------+----------------------------------------+------------------------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value                ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+------------------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 104084338567000.170376159726924        ; --                           ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                           ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>                       ; --          ; --             ;
-; NUM_PARALLEL_PROCESSORS             ; All                                    ; --                           ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                           ; writeback   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                           ; writeback   ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                           ; writeback   ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                           ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; writeback                              ; riscv_single_cycle_processor ; --          ; --             ;
-; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001                 ; --          ; --             ;
-; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --                           ; --          ; --             ;
-+-------------------------------------+----------------------------------------+------------------------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                         ;
++-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value                ; Entity Name               ; Section Id     ;
++-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 104084338567000.170376596014684        ; --                           ; --                        ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                           ; --                        ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>                       ; --                        ; --             ;
+; NUM_PARALLEL_PROCESSORS             ; All                                    ; --                           ; --                        ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                           ; riscv_pipelined_processor ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                           ; riscv_pipelined_processor ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                           ; riscv_pipelined_processor ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                           ; --                        ; --             ;
+; TOP_LEVEL_ENTITY                    ; riscv_pipelined_processor              ; riscv_single_cycle_processor ; --                        ; --             ;
+; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001                 ; --                        ; --             ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --                           ; --                        ; --             ;
++-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -93,8 +93,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4705 MB             ; 00:00:23                           ;
-; Total                  ; 00:00:10     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Elaboration ; 00:00:13     ; 1.0                     ; 4732 MB             ; 00:00:26                           ;
+; Total                  ; 00:00:13     ; --                      ; --                  ; 00:00:26                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

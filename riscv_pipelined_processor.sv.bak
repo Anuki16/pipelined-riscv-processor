@@ -1,0 +1,11 @@
+
+module riscv_pipelined_processor #(
+	parameter REG_WIDTH = 32,
+	parameter REG_COUNT = 32,
+	parameter NUM_MEM_LOCS = 64,
+	parameter NUM_INST = 128,
+	parameter ALU_SEL_WIDTH = 4,
+	parameter CTRL_SIZE = 21
+)( 
+	input logic clk, rstn
+);

@@ -24,7 +24,7 @@ module datapath_mem #(
 	logic alu_zero, alu_neg;
 	logic [REG_WIDTH-1:0] mem_addr; 
 	logic signed [REG_WIDTH-1:0] mem_write_data, mem_read_data;
-	logic [31:0] pc, target_pc, return_pc, pc_offset;
+	logic [31:0] pc, target_pc, return_pc, pc_with_offset;
 	logic [REG_BITS-1:0] rs1, rs2, rd;
    logic [N_WIDTH-1:0] counter_N;
 	logic counter_words, counter_done;
@@ -69,7 +69,7 @@ module datapath_mem #(
 	assign mem_write_data = read_data2;		// rs2 contents (cannot use bus B because it might have immediate)
 	
 	assign target_pc = alu_out;
-	assign pc_offset = imm_data;
+	assign pc_with_offset = pc + imm_data;
 	
 	assign counter_N = imm_data[N_WIDTH-1:0];
 	assign imm_sel_data = counter_sel? counter_out : imm_data;
