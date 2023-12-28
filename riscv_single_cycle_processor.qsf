@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY riscv_single_cycle_processor
+set_global_assignment -name TOP_LEVEL_ENTITY writeback
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:14:53  SEPTEMBER 13, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -70,6 +70,11 @@ set_global_assignment -name SYSTEMVERILOG_FILE simulation/counter_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE riscv_single_cycle_processor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE simulation/top_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE datapath_mem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fetch.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decode.sv
+set_global_assignment -name SYSTEMVERILOG_FILE execute.sv
+set_global_assignment -name SYSTEMVERILOG_FILE memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE writeback.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

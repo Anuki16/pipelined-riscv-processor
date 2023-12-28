@@ -12,134 +12,154 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/controls.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:08 on Oct 15,2023
+# Start time: 21:27:10 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/controls.sv 
-# End time: 23:16:08 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:10 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:08 on Oct 15,2023
+# Start time: 21:27:10 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 23:16:08 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:10 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/mux3.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:08 on Oct 15,2023
+# Start time: 21:27:10 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/mux3.sv 
 # -- Compiling module mux3
 # 
 # Top level modules:
 # 	mux3
-# End time: 23:16:08 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:10 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/inst_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:08 on Oct 15,2023
+# Start time: 21:27:11 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/inst_memory.sv 
 # -- Compiling module inst_memory
 # 
 # Top level modules:
 # 	inst_memory
-# End time: 23:16:08 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:11 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:08 on Oct 15,2023
+# Start time: 21:27:11 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/counter.sv 
 # -- Compiling module counter
 # 
 # Top level modules:
 # 	counter
-# End time: 23:16:08 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:11 on Dec 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/binary_to_7seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:27:11 on Dec 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/binary_to_7seg.sv 
+# -- Compiling module binary_to_7seg
+# 
+# Top level modules:
+# 	binary_to_7seg
+# End time: 21:27:11 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:09 on Oct 15,2023
+# Start time: 21:27:11 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 23:16:09 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:11 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/immgen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:09 on Oct 15,2023
+# Start time: 21:27:11 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/immgen.sv 
 # -- Compiling module immgen
 # 
 # Top level modules:
 # 	immgen
-# End time: 23:16:09 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:11 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/data_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:09 on Oct 15,2023
+# Start time: 21:27:11 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/data_memory.sv 
 # -- Compiling module data_memory
 # 
 # Top level modules:
 # 	data_memory
-# End time: 23:16:09 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:11 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/pccalc.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:09 on Oct 15,2023
+# Start time: 21:27:11 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/pccalc.sv 
 # -- Compiling module pccalc
 # 
 # Top level modules:
 # 	pccalc
-# End time: 23:16:09 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:11 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:09 on Oct 15,2023
+# Start time: 21:27:11 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 23:16:09 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:12 on Dec 08,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/datapath_mem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:09 on Oct 15,2023
+# Start time: 21:27:12 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/datapath_mem.sv 
 # -- Compiling module datapath_mem
 # 
 # Top level modules:
 # 	datapath_mem
-# End time: 23:16:09 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:12 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/riscv_single_cycle_processor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:09 on Oct 15,2023
+# Start time: 21:27:12 on Dec 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/riscv_single_cycle_processor.sv 
 # -- Compiling module riscv_single_cycle_processor
 # 
 # Top level modules:
 # 	riscv_single_cycle_processor
-# End time: 23:16:09 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:12 on Dec 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/riscv_single_cycle_processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/processor_fpga.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:27:12 on Dec 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/processor_fpga.sv 
+# -- Compiling module processor_fpga
+# 
+# Top level modules:
+# 	processor_fpga
+# End time: 21:27:12 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/simulation/top_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:33 on Oct 15,2023
+# Start time: 21:29:17 on Dec 08,2023
 # vlog -reportprogress 300 -work work C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/riscv_single_cycle_processor/simulation/top_tb.sv 
 # -- Compiling module top_tb
 # 
 # Top level modules:
 # 	top_tb
-# End time: 23:16:33 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 21:29:17 on Dec 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.top_tb
 # vsim work.top_tb 
-# Start time: 23:16:43 on Oct 15,2023
+# Start time: 21:29:28 on Dec 08,2023
 # Loading sv_std.std
 # Loading work.top_tb
 # Loading work.riscv_single_cycle_processor
@@ -153,8 +173,22 @@ vsim work.top_tb
 # Loading work.mux3
 # Loading work.inst_memory
 # Loading work.counter
-add wave -position insertpoint sim:/top_tb/dut/ctrl_obj/*
-add wave -position insertpoint sim:/top_tb/dut/data_obj/*
+add wave -position insertpoint  \
+sim:/top_tb/clk \
+sim:/top_tb/rstn \
+sim:/top_tb/x5 \
+sim:/top_tb/x6 \
+sim:/top_tb/mem1
 run
-# End time: 23:19:32 on Oct 15,2023, Elapsed time: 0:02:49
+add wave -position insertpoint sim:/top_tb/dut/data_obj/datamem_obj/*
+add wave -position insertpoint sim:/top_tb/dut/data_obj/alu_obj/*
+restart
+run
+add wave -position insertpoint sim:/top_tb/dut/data_obj/regfile_obj/*
+restart
+run
+add wave -position insertpoint sim:/top_tb/dut/data_obj/count_obj/*
+restart
+run
+# End time: 14:14:35 on Dec 09,2023, Elapsed time: 16:45:07
 # Errors: 0, Warnings: 0

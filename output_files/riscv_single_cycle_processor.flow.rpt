@@ -1,5 +1,5 @@
 Flow report for riscv_single_cycle_processor
-Sun Oct 15 23:31:04 2023
+Thu Dec 28 22:06:47 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,22 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 15 23:31:03 2023       ;
+; Flow Status                        ; Successful - Thu Dec 28 22:06:47 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; riscv_single_cycle_processor                ;
-; Top-level Entity Name              ; riscv_single_cycle_processor                ;
+; Top-level Entity Name              ; writeback                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0 / 6,272 ( 0 % )                           ;
-;     Total combinational functions  ; 0 / 6,272 ( 0 % )                           ;
-;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 2 / 92 ( 2 % )                              ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-; Device                             ; EP4CE6E22C6                                 ;
-; Timing Models                      ; Final                                       ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,65 +63,54 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+------------------------------+
 ; Option            ; Setting                      ;
 +-------------------+------------------------------+
-; Start date & time ; 10/15/2023 23:30:44          ;
+; Start date & time ; 12/28/2023 22:06:37          ;
 ; Main task         ; Compilation                  ;
 ; Revision Name     ; riscv_single_cycle_processor ;
 +-------------------+------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 104084338567000.169739284413564        ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
-; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001  ; --          ; --             ;
-; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --            ; --          ; --             ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                           ;
++-------------------------------------+----------------------------------------+------------------------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value                ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+------------------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 104084338567000.170376159726924        ; --                           ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                           ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>                       ; --          ; --             ;
+; NUM_PARALLEL_PROCESSORS             ; All                                    ; --                           ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                           ; writeback   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                           ; writeback   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                           ; writeback   ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                           ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; writeback                              ; riscv_single_cycle_processor ; --          ; --             ;
+; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001                 ; --          ; --             ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --                           ; --          ; --             ;
++-------------------------------------+----------------------------------------+------------------------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4729 MB             ; 00:00:19                           ;
-; Fitter               ; 00:00:03     ; 1.0                     ; 5478 MB             ; 00:00:03                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4765 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:25                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4705 MB             ; 00:00:23                           ;
+; Total                  ; 00:00:10     ; --                      ; --                  ; 00:00:23                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
-quartus_fit --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
-quartus_asm --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
-quartus_sta riscv_single_cycle_processor -c riscv_single_cycle_processor
-quartus_eda --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
+quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor --analysis_and_elaboration
 
 
 

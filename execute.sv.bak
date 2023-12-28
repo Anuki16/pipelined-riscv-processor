@@ -1,0 +1,14 @@
+
+module datapath_mem #(
+	parameter REG_WIDTH = 32,
+	parameter REG_COUNT = 32,
+	parameter NUM_MEM_LOCS = 64,
+	parameter NUM_INST = 128,
+	parameter ALU_SEL_WIDTH = 4,
+	parameter CTRL_SIZE = 21
+)(
+	input logic clk, rstn,
+	input logic [CTRL_SIZE-1:0] ctrl_signals,
+	output logic [31:0] instruction,
+	output logic ex_no_stay
+);

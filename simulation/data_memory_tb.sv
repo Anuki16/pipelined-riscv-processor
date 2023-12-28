@@ -15,6 +15,7 @@ module data_memory_tb();
 	logic [1:0] load_store_type; 
 	logic load_unsigned;
 	logic signed [DATA_WIDTH-1:0] mem_read_data;
+	logic [31:0] mem1;
 	
 	always #5 clk <= ~clk;
 	

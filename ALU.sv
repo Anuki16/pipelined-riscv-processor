@@ -7,7 +7,7 @@ module alu #(
 	input logic signed [WIDTH-1:0] bus_a, bus_b,	
 	input logic [ALU_SEL-1:0] alu_sel,
 	output logic signed [WIDTH-1:0] alu_out,
-	output logic alu_zero, alu_neg
+	output logic alu_zero
 );
 	
 	always_comb begin
@@ -30,6 +30,5 @@ module alu #(
 	end
 	
 	assign alu_zero = (alu_out == 0);
-	assign alu_neg = (alu_out < 0);
 	
 endmodule

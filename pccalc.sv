@@ -6,8 +6,7 @@ module pccalc (
 	input logic [31:0] target_pc,	// For JALR, already calculated PC
 	
 	input logic [2:0] branch_type,
-	input logic alu_zero, alu_neg,
-	input logic stay,
+	input logic alu_zero,
 	
 	output logic [31:0] pc,		// PC register
 	output logic [31:0] return_pc
@@ -23,9 +22,7 @@ module pccalc (
 	
 	// Next PC logic
 	always_comb begin
-		if (stay)	// Stay on the same instruction
-			next_pc = pc;
-		else if (!branch_type || !branch) // no branching
+		if (!branch_type || !branch) // no branching
 			next_pc = pc + 4;
 		else if (branch_type == `JMP_JALR) 
 			next_pc = {target_pc[31:1], 1'b0};	// zero LSB

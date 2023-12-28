@@ -14,6 +14,8 @@ module top_tb();
 	localparam ALU_SEL_WIDTH = 4;
 	localparam CTRL_SIZE = 21;
 	
+	logic [REG_WIDTH-1:0] x5, x6, mem1;
+	
 	riscv_single_cycle_processor #(.REG_WIDTH(REG_WIDTH), 
 				  .REG_COUNT(REG_COUNT),
 				  .NUM_MEM_LOCS(NUM_MEM_LOCS),
