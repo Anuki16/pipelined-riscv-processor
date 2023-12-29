@@ -15,7 +15,7 @@ module regfile #(
 	assign read_data1 = registers[read_reg1];
 	assign read_data2 = registers[read_reg2];
 	
-	always @(posedge clk or negedge rstn) begin
+	always @(negedge clk or negedge rstn) begin
 		if (~rstn) begin		// reset all registers to 0 
 			for (int i = 0; i < REG_COUNT; i++) registers[i] <= 'b0;
 		end

@@ -12,7 +12,7 @@ module writeback #(
 	output logic signed [REG_WIDTH-1:0] write_data
 );
 
-	logic signed [REG_WIDTH-1:0] alu_out, mem_read_data, return_pc;
+	logic [REG_WIDTH-1:0] alu_out, mem_read_data, return_pc;
 	logic [1:0] write_src_sel;
 	
 	mux3 #(.WIDTH(REG_WIDTH)) reg_src_mux (

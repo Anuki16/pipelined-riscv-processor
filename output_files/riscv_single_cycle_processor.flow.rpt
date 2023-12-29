@@ -1,5 +1,5 @@
 Flow report for riscv_single_cycle_processor
-Thu Dec 28 23:19:33 2023
+Fri Dec 29 15:13:41 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,20 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Dec 28 23:19:33 2023       ;
+; Flow Status                        ; Successful - Fri Dec 29 15:13:41 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; riscv_single_cycle_processor                ;
 ; Top-level Entity Name              ; riscv_pipelined_processor                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0 / 6,272 ( 0 % )                           ;
+;     Total combinational functions  ; 0 / 6,272 ( 0 % )                           ;
+;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2 / 92 ( 2 % )                              ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
+; Device                             ; EP4CE6E22C6                                 ;
+; Timing Models                      ; Final                                       ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -63,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+------------------------------+
 ; Option            ; Setting                      ;
 +-------------------+------------------------------+
-; Start date & time ; 12/28/2023 23:19:21          ;
+; Start date & time ; 12/29/2023 15:13:15          ;
 ; Main task         ; Compilation                  ;
 ; Revision Name     ; riscv_single_cycle_processor ;
 +-------------------+------------------------------+
@@ -74,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value                ; Entity Name               ; Section Id     ;
 +-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 104084338567000.170376596014684        ; --                           ; --                        ; --             ;
+; COMPILER_SIGNATURE_ID               ; 104084338567000.170382319520400        ; --                           ; --                        ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                           ; --                        ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>                       ; --                        ; --             ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --                           ; --                        ; --             ;
@@ -88,29 +90,41 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:13     ; 1.0                     ; 4732 MB             ; 00:00:26                           ;
-; Total                  ; 00:00:13     ; --                      ; --                  ; 00:00:26                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4731 MB             ; 00:00:28                           ;
+; Fitter               ; 00:00:04     ; 1.0                     ; 5473 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4767 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:36                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-T30N1CB  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
+quartus_fit --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
+quartus_asm --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
+quartus_sta riscv_single_cycle_processor -c riscv_single_cycle_processor
+quartus_eda --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
 
 
 

@@ -55,7 +55,7 @@ module controller #(parameter CTRL_SIZE = 21)(
 	end
 	
 	assign cur_ctrl = stay? control_store[next_addr] : control_store[ctrl_addr];
-	assign ctrl_signals = cur_ctrl[W_C-1:9];
+	assign ctrl_signals = instruction? cur_ctrl[W_C-1:9] : 'b0;		// If entire instruction is 0, ctrl signals should also be 0 (otherwise opcode 0 maps to a load inst)
 	
 	/* microinstructions */
 	// format:                     		  WEN	   ALUSEL   ALUB	ALUA	MEMW	MEMR	LST      LU    WSEL	   BT		   STY	MEMST	CEN	CSEL	NEXT			

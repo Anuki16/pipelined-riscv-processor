@@ -16,7 +16,7 @@ module top_tb();
 	
 	logic [REG_WIDTH-1:0] x5, x6, mem1;
 	
-	riscv_single_cycle_processor #(.REG_WIDTH(REG_WIDTH), 
+	riscv_pipelined_processor #(.REG_WIDTH(REG_WIDTH), 
 				  .REG_COUNT(REG_COUNT),
 				  .NUM_MEM_LOCS(NUM_MEM_LOCS),
 				  .NUM_INST(NUM_INST),

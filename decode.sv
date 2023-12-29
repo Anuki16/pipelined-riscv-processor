@@ -37,6 +37,9 @@ module decode #(
 	assign read_reg2 = instruction[24:20];
 	assign rd = instruction[11:7];	// not used now
 	
-	assign dec_exc_reg = {rd, ctrl_signals, read_data1, read_data2, imm_data, pc};
+	always @(posedge clk or negedge rstn) begin
+		if (~rstn) dec_exc_reg <= 'b0;
+		else dec_exc_reg <= {rd, ctrl_signals, read_data1, read_data2, imm_data, pc};
+	end
 	
 endmodule

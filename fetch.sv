@@ -18,6 +18,9 @@ module fetch #(
 	
 	inst_memory #(.NUM_INST(NUM_INST)) instmem_obj (.*);
 	
-	assign fetch_dec_reg = {instruction, pc};		
+	always @(posedge clk or negedge rstn) begin
+		if (~rstn) fetch_dec_reg <= 'b0;
+		else fetch_dec_reg <= {instruction, pc};	
+	end	
 	
 endmodule

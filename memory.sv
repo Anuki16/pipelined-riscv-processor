@@ -34,6 +34,9 @@ module memory #(
 	
 	assign {mem_write, mem_read, load_store_type, load_unsigned, write_src_sel} = ctrl_signals[CTRL_SIZE-8:CTRL_SIZE-14];
 	
-	assign mem_wb_reg = {write_en, rd, alu_out, mem_read_data, return_pc, write_src_sel};
+	always @(posedge clk or negedge rstn) begin
+		if (~rstn) mem_wb_reg <= 'b0;
+		else mem_wb_reg <= {write_en, rd, alu_out, mem_read_data, return_pc, write_src_sel};
+	end
 
 endmodule

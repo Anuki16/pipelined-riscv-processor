@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "10/15/2023 23:31:03"
+// DATE "12/29/2023 15:13:41"
 
 // 
 // Device: Altera EP4CE6E22C6 Package TQFP144
@@ -29,7 +29,7 @@
 
 `timescale 1 ps/ 1 ps
 
-module riscv_single_cycle_processor (
+module riscv_pipelined_processor (
 	clk,
 	rstn);
 input 	logic clk ;

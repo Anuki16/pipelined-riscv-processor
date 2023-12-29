@@ -39,8 +39,12 @@ module execute #(
 	assign return_pc = pc + 4;
 	assign target_pc = alu_out;
 	assign pc_with_offset = pc + imm_data;
-	assign exc_mem_reg = {rd, write_en, ctrl_signals[CTRL_SIZE-8:0], alu_out, read_data2, return_pc};
-	assign branch_type = ctrl_signals[CTRL_SIZE-15];
+	assign branch_type = ctrl_signals[CTRL_SIZE-15:CTRL_SIZE-17];
+	
+	always @(posedge clk or negedge rstn) begin
+		if (~rstn) exc_mem_reg <= 'b0;
+		else exc_mem_reg <= {rd, write_en, ctrl_signals[CTRL_SIZE-8:0], alu_out, read_data2, return_pc};
+	end
 			
 endmodule
 	
