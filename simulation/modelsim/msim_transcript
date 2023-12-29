@@ -12,164 +12,164 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:57 on Dec 29,2023
+# Start time: 20:23:14 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv 
-# End time: 15:13:57 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:14 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:57 on Dec 29,2023
+# Start time: 20:23:14 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 15:13:57 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:14 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/mux3.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:57 on Dec 29,2023
+# Start time: 20:23:14 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/mux3.sv 
 # -- Compiling module mux3
 # 
 # Top level modules:
 # 	mux3
-# End time: 15:13:57 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:14 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/inst_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:57 on Dec 29,2023
+# Start time: 20:23:14 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/inst_memory.sv 
 # -- Compiling module inst_memory
 # 
 # Top level modules:
 # 	inst_memory
-# End time: 15:13:57 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:15 on Dec 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:58 on Dec 29,2023
+# Start time: 20:23:15 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv 
 # -- Compiling module writeback
 # 
 # Top level modules:
 # 	writeback
-# End time: 15:13:58 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:15 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:58 on Dec 29,2023
+# Start time: 20:23:15 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 15:13:58 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:15 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/immgen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:58 on Dec 29,2023
+# Start time: 20:23:15 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/immgen.sv 
 # -- Compiling module immgen
 # 
 # Top level modules:
 # 	immgen
-# End time: 15:13:58 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:15 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:58 on Dec 29,2023
+# Start time: 20:23:15 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory.sv 
 # -- Compiling module data_memory
 # 
 # Top level modules:
 # 	data_memory
-# End time: 15:13:58 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:15 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:58 on Dec 29,2023
+# Start time: 20:23:15 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc.sv 
 # -- Compiling module pccalc
 # 
 # Top level modules:
 # 	pccalc
-# End time: 15:13:58 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:15 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:58 on Dec 29,2023
+# Start time: 20:23:15 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 15:13:58 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:15 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:58 on Dec 29,2023
+# Start time: 20:23:15 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv 
 # -- Compiling module fetch
 # 
 # Top level modules:
 # 	fetch
-# End time: 15:13:59 on Dec 29,2023, Elapsed time: 0:00:01
+# End time: 20:23:16 on Dec 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:59 on Dec 29,2023
+# Start time: 20:23:16 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv 
 # -- Compiling module decode
 # 
 # Top level modules:
 # 	decode
-# End time: 15:13:59 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:16 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:59 on Dec 29,2023
+# Start time: 20:23:16 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv 
 # -- Compiling module execute
 # 
 # Top level modules:
 # 	execute
-# End time: 15:13:59 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:16 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:59 on Dec 29,2023
+# Start time: 20:23:16 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv 
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
-# End time: 15:13:59 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:16 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/anuki/OneDrive\ -\ University\ of\ Moratuwa/Documents/Anuki/Campus/Semester\ 5/EN3021\ Digital\ System\ Design/pipelined-riscv-processor {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:59 on Dec 29,2023
+# Start time: 20:23:16 on Dec 29,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor" C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv 
 # -- Compiling module riscv_pipelined_processor
 # 
 # Top level modules:
 # 	riscv_pipelined_processor
-# End time: 15:13:59 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:16 on Dec 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work {C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/top_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:14:11 on Dec 29,2023
+# Start time: 20:23:24 on Dec 29,2023
 # vlog -reportprogress 300 -work work C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/top_tb.sv 
 # -- Compiling module top_tb
 # 
 # Top level modules:
 # 	top_tb
-# End time: 15:14:11 on Dec 29,2023, Elapsed time: 0:00:00
+# End time: 20:23:25 on Dec 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vsim work.top_tb
 # vsim work.top_tb 
-# Start time: 15:14:44 on Dec 29,2023
+# Start time: 20:23:32 on Dec 29,2023
 # Loading sv_std.std
 # Loading work.top_tb
 # Loading work.riscv_pipelined_processor
@@ -187,26 +187,11 @@ vsim work.top_tb
 # Loading work.writeback
 # Loading work.mux3
 add wave -position insertpoint sim:/top_tb/dut/*
-add wave -position insertpoint  \
-sim:/top_tb/dut/fetch_stage/pc \
-sim:/top_tb/dut/fetch_stage/instruction
 add wave -position insertpoint sim:/top_tb/dut/decode_stage/regfile_obj/*
-add wave -position insertpoint  \
-sim:/top_tb/dut/decode_stage/immgen_obj/imm_out
 add wave -position insertpoint  \
 sim:/top_tb/dut/execute_stage/bus_a \
 sim:/top_tb/dut/execute_stage/bus_b \
 sim:/top_tb/dut/execute_stage/alu_out
-add wave -position insertpoint  \
-sim:/top_tb/dut/memory_stage/mem_addr \
-sim:/top_tb/dut/memory_stage/mem_write_data \
-sim:/top_tb/dut/memory_stage/mem_read_data
-add wave -position insertpoint  \
-sim:/top_tb/dut/writeback_stage/write_en \
-sim:/top_tb/dut/writeback_stage/write_reg \
-sim:/top_tb/dut/writeback_stage/write_data \
-sim:/top_tb/dut/writeback_stage/write_src_sel
+run
 add wave -position insertpoint  \
 sim:/top_tb/dut/decode_stage/regfile_obj/registers
-restart
-run

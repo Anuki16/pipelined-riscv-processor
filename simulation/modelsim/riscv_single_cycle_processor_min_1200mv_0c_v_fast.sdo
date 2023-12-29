@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "riscv_pipelined_processor")
-  (DATE "12/29/2023 15:13:41")
+  (DATE "12/29/2023 20:22:59")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition")
