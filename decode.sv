@@ -10,7 +10,7 @@ module decode #(
 	input logic write_en,
 	input logic [REG_BITS-1:0] write_reg,
 	input logic signed [REG_WIDTH-1:0] write_data,
-	output logic [REG_BITS + CTRL_SIZE + REG_WIDTH*3 + 32 - 1:0] dec_exc_reg
+	output logic [REG_BITS*3 + CTRL_SIZE + REG_WIDTH*3 + 32 - 1:0] dec_exc_reg
 );
 	logic [REG_BITS-1:0] read_reg1, read_reg2, rd;
 	logic signed [REG_WIDTH-1:0] read_data1, read_data2, imm_data;
@@ -39,7 +39,7 @@ module decode #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) dec_exc_reg <= 'b0;
-		else dec_exc_reg <= {rd, ctrl_signals, read_data1, read_data2, imm_data, pc};
+		else dec_exc_reg <= {read_reg1, read_reg2, rd, ctrl_signals, read_data1, read_data2, imm_data, pc};
 	end
 	
 endmodule

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for riscv_single_cycle_processor
-Fri Dec 29 20:22:46 2023
+Sat Dec 30 23:23:14 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -22,15 +22,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  14. Parameter Settings for User Entity Instance: decode:decode_stage|controller:ctrl_obj
  15. Parameter Settings for User Entity Instance: execute:execute_stage
  16. Parameter Settings for User Entity Instance: execute:execute_stage|alu:alu_obj
- 17. Parameter Settings for User Entity Instance: memory:memory_stage
- 18. Parameter Settings for User Entity Instance: memory:memory_stage|data_memory:datamem_obj
- 19. Parameter Settings for User Entity Instance: writeback:writeback_stage
- 20. Parameter Settings for User Entity Instance: writeback:writeback_stage|mux3:reg_src_mux
- 21. Port Connectivity Checks: "decode:decode_stage|controller:ctrl_obj"
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
- 25. Analysis & Synthesis Suppressed Messages
+ 17. Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data1_mux
+ 18. Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data2_mux
+ 19. Parameter Settings for User Entity Instance: memory:memory_stage
+ 20. Parameter Settings for User Entity Instance: memory:memory_stage|data_memory:datamem_obj
+ 21. Parameter Settings for User Entity Instance: writeback:writeback_stage
+ 22. Parameter Settings for User Entity Instance: writeback:writeback_stage|mux3:reg_src_mux
+ 23. Parameter Settings for User Entity Instance: forwarding_unit:fwd_unit
+ 24. Port Connectivity Checks: "decode:decode_stage|controller:ctrl_obj"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+ 28. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -57,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 29 20:22:46 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 30 23:23:14 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; riscv_single_cycle_processor                ;
 ; Top-level Entity Name              ; riscv_pipelined_processor                   ;
@@ -182,6 +185,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                           ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; forwarding_unit.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv           ;         ;
 ; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv                       ;         ;
 ; controls.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv                  ;         ;
 ; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv                   ;         ;
@@ -352,6 +356,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data1_mux ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data2_mux ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: memory:memory_stage ;
 +----------------+-------+-----------------------------------------+
@@ -401,6 +425,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: forwarding_unit:fwd_unit ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; REG_BITS       ; 5     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------+
 ; Port Connectivity Checks: "decode:decode_stage|controller:ctrl_obj" ;
 +------------+-------+----------+-------------------------------------+
@@ -437,9 +471,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Dec 29 20:22:34 2023
+    Info: Processing started: Sat Dec 30 23:23:00 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file forwarding_unit.sv
+    Info (12023): Found entity 1: forwarding_unit File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: alu File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file simulation/alu_tb.sv
@@ -491,16 +527,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file writeba
     Info (12023): Found entity 1: writeback File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file riscv_pipelined_processor.sv
     Info (12023): Found entity 1: riscv_pipelined_processor File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file set_assc_cache.sv
+    Info (12023): Found entity 1: set_assc_cache File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/set_assc_cache.sv Line: 3
 Info (12127): Elaborating entity "riscv_pipelined_processor" for the top level hierarchy
-Info (12128): Elaborating entity "fetch" for hierarchy "fetch:fetch_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 30
+Info (12128): Elaborating entity "fetch" for hierarchy "fetch:fetch_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 42
 Info (12128): Elaborating entity "pccalc" for hierarchy "fetch:fetch_stage|pccalc:pclogic_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv Line: 17
 Info (12128): Elaborating entity "inst_memory" for hierarchy "fetch:fetch_stage|inst_memory:instmem_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv Line: 19
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "memory" into its bus
-Info (12128): Elaborating entity "decode" for hierarchy "decode:decode_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 34
+Info (12128): Elaborating entity "decode" for hierarchy "decode:decode_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 46
 Info (12128): Elaborating entity "regfile" for hierarchy "decode:decode_stage|regfile:regfile_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv Line: 24
 Info (12128): Elaborating entity "immgen" for hierarchy "decode:decode_stage|immgen:immgen_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv Line: 29
 Info (12128): Elaborating entity "controller" for hierarchy "decode:decode_stage|controller:ctrl_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv Line: 31
-Warning (10230): Verilog HDL assignment warning at controller.sv(58): truncated value with size 32 to match size of target (21) File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 58
 Warning (10030): Net "control_store[511..433]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
 Warning (10030): Net "control_store[431..401]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
 Warning (10030): Net "control_store[399]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
@@ -527,13 +564,16 @@ Warning (10030): Net "control_store[65]" at controller.sv(12) has no driver or i
 Warning (10030): Net "control_store[63..36]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
 Warning (10030): Net "control_store[31..12]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
 Warning (10030): Net "control_store[7..6]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Info (12128): Elaborating entity "execute" for hierarchy "execute:execute_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 39
-Info (12128): Elaborating entity "alu" for hierarchy "execute:execute_stage|alu:alu_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 30
-Info (12128): Elaborating entity "memory" for hierarchy "memory:memory_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 44
+Info (12128): Elaborating entity "execute" for hierarchy "execute:execute_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 51
+Warning (10036): Verilog HDL or VHDL warning at execute.sv(25): object "rs1" assigned a value but never read File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 25
+Warning (10036): Verilog HDL or VHDL warning at execute.sv(25): object "rs2" assigned a value but never read File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 25
+Info (12128): Elaborating entity "alu" for hierarchy "execute:execute_stage|alu:alu_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 33
+Info (12128): Elaborating entity "mux3" for hierarchy "execute:execute_stage|mux3:read_data1_mux" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 41
+Info (12128): Elaborating entity "memory" for hierarchy "memory:memory_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 56
 Info (12128): Elaborating entity "data_memory" for hierarchy "memory:memory_stage|data_memory:datamem_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv Line: 28
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "memory" into its bus
-Info (12128): Elaborating entity "writeback" for hierarchy "writeback:writeback_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 48
-Info (12128): Elaborating entity "mux3" for hierarchy "writeback:writeback_stage|mux3:reg_src_mux" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv Line: 24
+Info (12128): Elaborating entity "writeback" for hierarchy "writeback:writeback_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 60
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "forwarding_unit:fwd_unit" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 63
 Info (144001): Generated suppressed messages file C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/output_files/riscv_single_cycle_processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -543,11 +583,11 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4745 megabytes
-    Info: Processing ended: Fri Dec 29 20:22:46 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4742 megabytes
+    Info: Processing ended: Sat Dec 30 23:23:14 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

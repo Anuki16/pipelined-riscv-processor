@@ -1,0 +1,15 @@
+`include "controls.sv"
+
+module set_assc_cache #(
+	parameter ADDR_WIDTH = 32,
+	parameter DATA_WIDTH = 32,
+	parameter NUM_LOCS = 64	// Number of 32 bit words
+)(
+	input logic [ADDR_WIDTH-1:0] mem_addr,
+	input logic signed [DATA_WIDTH-1:0] mem_write_data,
+	input logic clk, rstn,
+	input logic mem_read, mem_write,	// control signals
+	input logic [1:0] load_store_type, 
+	input logic load_unsigned,
+	output logic signed [DATA_WIDTH-1:0] mem_read_data
+);

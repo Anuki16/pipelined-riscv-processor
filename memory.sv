@@ -36,7 +36,7 @@ module memory #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) mem_wb_reg <= 'b0;
-		else mem_wb_reg <= {write_en, rd, alu_out, mem_read_data, return_pc, write_src_sel};
+		else mem_wb_reg <= {rd, write_en, alu_out, mem_read_data, return_pc, write_src_sel};
 	end
 
 endmodule

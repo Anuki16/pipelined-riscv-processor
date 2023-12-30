@@ -23,6 +23,6 @@ module writeback #(
 			.out(write_data)
 	);
 	
-	assign {write_en, write_reg, alu_out, mem_read_data, return_pc, write_src_sel} = mem_wb_reg;
+	assign {write_reg, write_en, alu_out, mem_read_data, return_pc, write_src_sel} = mem_wb_reg;
 	
 endmodule
