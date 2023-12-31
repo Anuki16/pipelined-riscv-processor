@@ -1,5 +1,5 @@
 Flow report for riscv_single_cycle_processor
-Mon Jan 01 00:55:37 2024
+Mon Jan 01 01:12:34 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jan 01 00:55:37 2024       ;
+; Flow Status                        ; Successful - Mon Jan 01 01:12:34 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; riscv_single_cycle_processor                ;
-; Top-level Entity Name              ; data_memory_controller                      ;
+; Top-level Entity Name              ; riscv_pipelined_processor                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -63,29 +63,29 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+------------------------------+
 ; Option            ; Setting                      ;
 +-------------------+------------------------------+
-; Start date & time ; 01/01/2024 00:55:20          ;
+; Start date & time ; 01/01/2024 01:12:22          ;
 ; Main task         ; Compilation                  ;
 ; Revision Name     ; riscv_single_cycle_processor ;
 +-------------------+------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                      ;
-+-------------------------------------+----------------------------------------+------------------------------+------------------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value                ; Entity Name            ; Section Id     ;
-+-------------------------------------+----------------------------------------+------------------------------+------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 104084338567000.170403092029224        ; --                           ; --                     ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                           ; --                     ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>                       ; --                     ; --             ;
-; NUM_PARALLEL_PROCESSORS             ; All                                    ; --                           ; --                     ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                           ; data_memory_controller ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                           ; data_memory_controller ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                           ; data_memory_controller ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                           ; --                     ; --             ;
-; TOP_LEVEL_ENTITY                    ; data_memory_controller                 ; riscv_single_cycle_processor ; --                     ; --             ;
-; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001                 ; --                     ; --             ;
-; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --                           ; --                     ; --             ;
-+-------------------------------------+----------------------------------------+------------------------------+------------------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                         ;
++-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value                ; Entity Name               ; Section Id     ;
++-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 104084338567000.170403194233768        ; --                           ; --                        ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                           ; --                        ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>                       ; --                        ; --             ;
+; NUM_PARALLEL_PROCESSORS             ; All                                    ; --                           ; --                        ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                           ; riscv_pipelined_processor ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                           ; riscv_pipelined_processor ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                           ; riscv_pipelined_processor ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                           ; --                        ; --             ;
+; TOP_LEVEL_ENTITY                    ; riscv_pipelined_processor              ; riscv_single_cycle_processor ; --                        ; --             ;
+; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001                 ; --                        ; --             ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --                           ; --                        ; --             ;
++-------------------------------------+----------------------------------------+------------------------------+---------------------------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -93,8 +93,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:18     ; 1.0                     ; 4789 MB             ; 00:00:30                           ;
-; Total                  ; 00:00:18     ; --                      ; --                  ; 00:00:30                           ;
+; Analysis & Elaboration ; 00:00:12     ; 1.0                     ; 4735 MB             ; 00:00:26                           ;
+; Total                  ; 00:00:12     ; --                      ; --                  ; 00:00:26                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

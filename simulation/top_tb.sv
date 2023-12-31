@@ -9,7 +9,7 @@ module top_tb();
 	
 	localparam REG_WIDTH = 32;
 	localparam REG_COUNT = 32;
-	localparam NUM_MEM_LOCS = 64;
+	localparam NUM_MEM_LOCS = 256;
 	localparam NUM_INST = 128;
 	localparam ALU_SEL_WIDTH = 4;
 	localparam CTRL_SIZE = 21;

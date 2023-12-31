@@ -5,7 +5,7 @@ module decode #(
 	parameter CTRL_SIZE = 21,
 	parameter REG_BITS = $clog2(REG_COUNT)
 )(
-	input logic clk, rstn,
+	input logic clk, rstn, stall,
 	input logic [63:0] fetch_dec_reg,
 	input logic write_en,
 	input logic [REG_BITS-1:0] write_reg,
@@ -39,7 +39,7 @@ module decode #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) dec_exc_reg <= 'b0;
-		else dec_exc_reg <= {read_reg1, read_reg2, rd, ctrl_signals, read_data1, read_data2, imm_data, pc};
+		else if (~stall) dec_exc_reg <= {read_reg1, read_reg2, rd, ctrl_signals, read_data1, read_data2, imm_data, pc};
 	end
 	
 endmodule

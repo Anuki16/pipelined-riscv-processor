@@ -8,7 +8,8 @@ module memory #(
 )(
 	input logic clk, rstn,
 	input logic [REG_BITS + 1 + CTRL_SIZE-7 + REG_WIDTH*3 - 1:0] exc_mem_reg,
-	output logic [1 + REG_BITS + REG_WIDTH*3 + 2 - 1:0] mem_wb_reg
+	output logic [1 + REG_BITS + REG_WIDTH*3 + 2 - 1:0] mem_wb_reg,
+	output logic stall
 );
 	logic [REG_WIDTH-1:0] mem_addr; 
 	logic signed [REG_WIDTH-1:0] mem_write_data, mem_read_data;
@@ -23,9 +24,9 @@ module memory #(
 	logic [REG_WIDTH-1:0] alu_out, read_data2, return_pc;
 	logic [1:0] write_src_sel;
 	
-	data_memory #(.ADDR_WIDTH(REG_WIDTH),
+	data_memory_controller #(.ADDR_WIDTH(REG_WIDTH),
 					  .DATA_WIDTH(REG_WIDTH),
-					  .NUM_LOCS(NUM_MEM_LOCS)) datamem_obj (.*);
+					  .NUM_MEM_BYTES(NUM_MEM_LOCS)) datamem_obj (.*);
 					  
 	assign {rd, write_en, ctrl_signals, alu_out, read_data2, return_pc} = exc_mem_reg;
 	
@@ -36,7 +37,7 @@ module memory #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) mem_wb_reg <= 'b0;
-		else mem_wb_reg <= {rd, write_en, alu_out, mem_read_data, return_pc, write_src_sel};
+		else if (~stall) mem_wb_reg <= {rd, write_en, alu_out, mem_read_data, return_pc, write_src_sel};
 	end
 
 endmodule

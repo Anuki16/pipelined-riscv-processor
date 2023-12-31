@@ -4,7 +4,7 @@
 
 module pccalc_tb();
 
-	logic clk = 0, rstn = 0;
+	logic clk = 0, rstn = 0, stall = 0;
 	logic [31:0] pc_with_offset;		
 	logic [31:0] target_pc, pc;
 	logic [2:0] branch_type;

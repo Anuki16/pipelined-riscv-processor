@@ -7,7 +7,7 @@ module execute #(
 	parameter CTRL_SIZE = 21,
 	parameter REG_BITS = $clog2(REG_COUNT)
 )(
-	input logic clk, rstn,
+	input logic clk, rstn, stall, 
 	input logic [1:0] forward_A, forward_B,
 	input logic [REG_WIDTH-1:0] wb_data_ex_mem, wb_data_mem_wb,
 	input logic [REG_BITS*3 + CTRL_SIZE + REG_WIDTH*3 + 32 - 1:0] dec_exc_reg,
@@ -62,7 +62,7 @@ module execute #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) exc_mem_reg <= 'b0;
-		else exc_mem_reg <= {rd, write_en, ctrl_signals[CTRL_SIZE-8:0], alu_out, read_sel_data2, return_pc};
+		else if (~stall) exc_mem_reg <= {rd, write_en, ctrl_signals[CTRL_SIZE-8:0], alu_out, read_sel_data2, return_pc};
 	end
 			
 endmodule

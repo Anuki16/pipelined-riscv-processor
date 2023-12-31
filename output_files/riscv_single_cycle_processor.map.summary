@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Mon Jan 01 00:55:37 2024
+Analysis & Elaboration Status : Successful - Mon Jan 01 01:12:34 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : riscv_single_cycle_processor
-Top-level Entity Name : data_memory_controller
+Top-level Entity Name : riscv_pipelined_processor
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

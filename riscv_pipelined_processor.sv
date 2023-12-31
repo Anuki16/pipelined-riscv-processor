@@ -2,7 +2,7 @@
 module riscv_pipelined_processor #(
 	parameter REG_WIDTH = 32,
 	parameter REG_COUNT = 32,
-	parameter NUM_MEM_LOCS = 64,
+	parameter NUM_MEM_LOCS = 256,
 	parameter NUM_INST = 128,
 	parameter ALU_SEL_WIDTH = 4,
 	parameter CTRL_SIZE = 21,
@@ -36,6 +36,8 @@ module riscv_pipelined_processor #(
 	logic [REG_BITS-1:0] rs1, rs2, rd_ex, rd_mem;
 	logic regWrEn, regWrEn_mem;
 	logic [1:0] forward_A, forward_B;
+	
+	logic stall;
 
 	/* Pipeline stages */
 	

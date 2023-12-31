@@ -3,7 +3,7 @@
 module fetch #(
 	parameter NUM_INST = 128
 )(
-	input logic clk, rstn,
+	input logic clk, rstn, stall, 
 	input logic alu_zero,
 	input logic [2:0] branch_type,
 	input logic [31:0] target_pc, pc_with_offset,
@@ -20,7 +20,7 @@ module fetch #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) fetch_dec_reg <= 'b0;
-		else fetch_dec_reg <= {instruction, pc};	
+		else if (~stall) fetch_dec_reg <= {instruction, pc};	
 	end	
 	
 endmodule

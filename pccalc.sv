@@ -1,7 +1,7 @@
 `include "controls.sv"
 
 module pccalc (
-	input logic clk, rstn,
+	input logic clk, rstn, stall,
 	input logic [31:0] pc_with_offset,		// For branch and JAL
 	input logic [31:0] target_pc,	// For JALR, already calculated PC
 	
@@ -16,7 +16,8 @@ module pccalc (
 	
 	always @(posedge clk or negedge rstn) begin
 		if (!rstn) pc <= 32'b0;
-		else pc <= next_pc;
+		else if (~stall) pc <= next_pc;
+		else pc <= pc;
 	end
 	
 	// Next PC logic
