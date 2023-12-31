@@ -6,7 +6,7 @@ module data_memory_tb();
 	
 	localparam ADDR_WIDTH = 32;
 	localparam DATA_WIDTH = 32;
-	localparam NUM_LOCS = 10;
+	localparam NUM_MEM_BYTES = 256;
 	
 	logic [ADDR_WIDTH-1:0] mem_addr;
 	logic signed [DATA_WIDTH-1:0] mem_write_data;
@@ -16,12 +16,13 @@ module data_memory_tb();
 	logic load_unsigned;
 	logic signed [DATA_WIDTH-1:0] mem_read_data;
 	logic [31:0] mem1;
+	logic stall;
 	
 	always #5 clk <= ~clk;
 	
-	data_memory #(.ADDR_WIDTH(ADDR_WIDTH),
+	data_memory_controller #(.ADDR_WIDTH(ADDR_WIDTH),
 					  .DATA_WIDTH(DATA_WIDTH),
-					  .NUM_LOCS(NUM_LOCS)) dut (.*);
+					  .NUM_MEM_BYTES(NUM_MEM_BYTES)) dut (.*);
 	
 	initial begin
 		@(posedge clk) #1 rstn = 0;
@@ -32,44 +33,44 @@ module data_memory_tb();
 		load_store_type = `LS_BYTE;
 		load_unsigned = 0;
 		
-		#10 mem_addr = (2 << 2)|2;	
+		#20 mem_addr = 150;	
 		load_store_type = `LS_HALF;
 		
-		#10 mem_addr = (7 << 2)|1;	
+		#20 mem_addr = 80;	
 		load_store_type = `LS_WORD;
 		
-		#10 mem_write = 0;
+		#20 mem_write = 0;
 		mem_read = 1;
 		mem_addr = (5 << 2)|2;
 		load_store_type = `LS_BYTE;
 		load_unsigned = 0;		
-		#1 assert (mem_read_data == $signed(mem_write_data[7:0])) 
+		#20 assert (mem_read_data == $signed(mem_write_data[7:0])) 
 			else $error("%d %d", mem_read_data, mem_write_data[7:0]);
 			
-		#10 load_unsigned = 1;		
+		#20 load_unsigned = 1;		
 		#1 assert (mem_read_data == $unsigned(mem_write_data[7:0])) 
 			else $error("%d %d", mem_read_data, mem_write_data[7:0]);
 			
-		#10 mem_addr = (2 << 2)|2;
+		#20 mem_addr = 150;
 		load_store_type = `LS_HALF;
 		load_unsigned = 0;		
-		#1 assert (mem_read_data == $signed(mem_write_data[15:0])) 
+		#20 assert (mem_read_data == $signed(mem_write_data[15:0])) 
 			else $error("%d %d", mem_read_data, mem_write_data[15:0]);
 			
 		#10 load_unsigned = 1;		
 		#1 assert (mem_read_data == $unsigned(mem_write_data[15:0])) 
 			else $error("%d %d", mem_read_data, mem_write_data[15:0]);
 			
-		#10 mem_addr = (7 << 2)|1;
+		#20 mem_addr = 80;
 		load_store_type = `LS_WORD;
 		load_unsigned = 0;		
-		#1 assert (mem_read_data == mem_write_data) 
+		#20 assert (mem_read_data == mem_write_data) 
 			else $error("%d %d", mem_read_data, mem_write_data);
 			
-		#10 mem_addr = (5 << 2);
+		#20 mem_addr = (5 << 2);
 		load_store_type = `LS_WORD;
 		load_unsigned = 0;		
-		#1 assert (mem_read_data == {8'b0, mem_write_data[7:0], 16'b0}) 
+		#20 assert (mem_read_data == {8'b0, mem_write_data[7:0], 16'b0}) 
 			else $error("%d", mem_read_data);
 		
 	end

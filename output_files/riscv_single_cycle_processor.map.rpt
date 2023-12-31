@@ -1,5 +1,5 @@
-Analysis & Synthesis report for riscv_single_cycle_processor
-Sat Dec 30 23:23:14 2023
+Analysis & Elaboration report for riscv_single_cycle_processor
+Mon Jan 01 00:55:37 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,33 +7,14 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |riscv_pipelined_processor
- 10. Parameter Settings for User Entity Instance: fetch:fetch_stage
- 11. Parameter Settings for User Entity Instance: fetch:fetch_stage|inst_memory:instmem_obj
- 12. Parameter Settings for User Entity Instance: decode:decode_stage
- 13. Parameter Settings for User Entity Instance: decode:decode_stage|regfile:regfile_obj
- 14. Parameter Settings for User Entity Instance: decode:decode_stage|controller:ctrl_obj
- 15. Parameter Settings for User Entity Instance: execute:execute_stage
- 16. Parameter Settings for User Entity Instance: execute:execute_stage|alu:alu_obj
- 17. Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data1_mux
- 18. Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data2_mux
- 19. Parameter Settings for User Entity Instance: memory:memory_stage
- 20. Parameter Settings for User Entity Instance: memory:memory_stage|data_memory:datamem_obj
- 21. Parameter Settings for User Entity Instance: writeback:writeback_stage
- 22. Parameter Settings for User Entity Instance: writeback:writeback_stage|mux3:reg_src_mux
- 23. Parameter Settings for User Entity Instance: forwarding_unit:fwd_unit
- 24. Port Connectivity Checks: "decode:decode_stage|controller:ctrl_obj"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |data_memory_controller
+  5. Parameter Settings for User Entity Instance: set_assc_cache:cache_memory_obj
+  6. Parameter Settings for User Entity Instance: data_memory_for_cache:data_memory_obj
+  7. Analysis & Elaboration Settings
+  8. Analysis & Elaboration Messages
+  9. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -58,110 +39,23 @@ https://fpgasoftware.intel.com/eula.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 30 23:23:14 2023       ;
+; Analysis & Elaboration Status      ; Successful - Mon Jan 01 00:55:37 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; riscv_single_cycle_processor                ;
-; Top-level Entity Name              ; riscv_pipelined_processor                   ;
+; Top-level Entity Name              ; data_memory_controller                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 2                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                               ;
-+------------------------------------------------------------------+---------------------------+------------------------------+
-; Option                                                           ; Setting                   ; Default Value                ;
-+------------------------------------------------------------------+---------------------------+------------------------------+
-; Top-level entity name                                            ; riscv_pipelined_processor ; riscv_single_cycle_processor ;
-; Family name                                                      ; Cyclone IV E              ; Cyclone V                    ;
-; Maximum processors allowed for parallel compilation              ; All                       ;                              ;
-; Verilog Show LMF Mapping Messages                                ; Off                       ;                              ;
-; Verilog Version                                                  ; SystemVerilog_2005        ; Verilog_2001                 ;
-; Use smart compilation                                            ; Off                       ; Off                          ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                        ; On                           ;
-; Enable compact report table                                      ; Off                       ; Off                          ;
-; Restructure Multiplexers                                         ; Auto                      ; Auto                         ;
-; Create Debugging Nodes for IP Cores                              ; Off                       ; Off                          ;
-; Preserve fewer node names                                        ; On                        ; On                           ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable                    ; Enable                       ;
-; VHDL Version                                                     ; VHDL_1993                 ; VHDL_1993                    ;
-; State Machine Processing                                         ; Auto                      ; Auto                         ;
-; Safe State Machine                                               ; Off                       ; Off                          ;
-; Extract Verilog State Machines                                   ; On                        ; On                           ;
-; Extract VHDL State Machines                                      ; On                        ; On                           ;
-; Ignore Verilog initial constructs                                ; Off                       ; Off                          ;
-; Iteration limit for constant Verilog loops                       ; 5000                      ; 5000                         ;
-; Iteration limit for non-constant Verilog loops                   ; 250                       ; 250                          ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                        ; On                           ;
-; Infer RAMs from Raw Logic                                        ; On                        ; On                           ;
-; Parallel Synthesis                                               ; On                        ; On                           ;
-; DSP Block Balancing                                              ; Auto                      ; Auto                         ;
-; NOT Gate Push-Back                                               ; On                        ; On                           ;
-; Power-Up Don't Care                                              ; On                        ; On                           ;
-; Remove Redundant Logic Cells                                     ; Off                       ; Off                          ;
-; Remove Duplicate Registers                                       ; On                        ; On                           ;
-; Ignore CARRY Buffers                                             ; Off                       ; Off                          ;
-; Ignore CASCADE Buffers                                           ; Off                       ; Off                          ;
-; Ignore GLOBAL Buffers                                            ; Off                       ; Off                          ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                       ; Off                          ;
-; Ignore LCELL Buffers                                             ; Off                       ; Off                          ;
-; Ignore SOFT Buffers                                              ; On                        ; On                           ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                       ; Off                          ;
-; Optimization Technique                                           ; Balanced                  ; Balanced                     ;
-; Carry Chain Length                                               ; 70                        ; 70                           ;
-; Auto Carry Chains                                                ; On                        ; On                           ;
-; Auto Open-Drain Pins                                             ; On                        ; On                           ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                       ; Off                          ;
-; Auto ROM Replacement                                             ; On                        ; On                           ;
-; Auto RAM Replacement                                             ; On                        ; On                           ;
-; Auto DSP Block Replacement                                       ; On                        ; On                           ;
-; Auto Shift Register Replacement                                  ; Auto                      ; Auto                         ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto                      ; Auto                         ;
-; Auto Clock Enable Replacement                                    ; On                        ; On                           ;
-; Strict RAM Replacement                                           ; Off                       ; Off                          ;
-; Allow Synchronous Control Signals                                ; On                        ; On                           ;
-; Force Use of Synchronous Clear Signals                           ; Off                       ; Off                          ;
-; Auto RAM Block Balancing                                         ; On                        ; On                           ;
-; Auto RAM to Logic Cell Conversion                                ; Off                       ; Off                          ;
-; Auto Resource Sharing                                            ; Off                       ; Off                          ;
-; Allow Any RAM Size For Recognition                               ; Off                       ; Off                          ;
-; Allow Any ROM Size For Recognition                               ; Off                       ; Off                          ;
-; Allow Any Shift Register Size For Recognition                    ; Off                       ; Off                          ;
-; Use LogicLock Constraints during Resource Balancing              ; On                        ; On                           ;
-; Ignore translate_off and synthesis_off directives                ; Off                       ; Off                          ;
-; Timing-Driven Synthesis                                          ; On                        ; On                           ;
-; Report Parameter Settings                                        ; On                        ; On                           ;
-; Report Source Assignments                                        ; On                        ; On                           ;
-; Report Connectivity Checks                                       ; On                        ; On                           ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                       ; Off                          ;
-; Synchronization Register Chain Length                            ; 2                         ; 2                            ;
-; Power Optimization During Synthesis                              ; Normal compilation        ; Normal compilation           ;
-; HDL message level                                                ; Level2                    ; Level2                       ;
-; Suppress Register Optimization Related Messages                  ; Off                       ; Off                          ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000                      ; 5000                         ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000                      ; 5000                         ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                       ; 100                          ;
-; Clock MUX Protection                                             ; On                        ; On                           ;
-; Auto Gated Clock Conversion                                      ; Off                       ; Off                          ;
-; Block Design Naming                                              ; Auto                      ; Auto                         ;
-; SDC constraint protection                                        ; Off                       ; Off                          ;
-; Synthesis Effort                                                 ; Auto                      ; Auto                         ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                        ; On                           ;
-; Pre-Mapping Resynthesis Optimization                             ; Off                       ; Off                          ;
-; Analysis & Synthesis Message Level                               ; Medium                    ; Medium                       ;
-; Disable Register Merging Across Hierarchies                      ; Auto                      ; Auto                         ;
-; Resource Aware Inference For Block RAM                           ; On                        ; On                           ;
-+------------------------------------------------------------------+---------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -180,300 +74,147 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                           ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; forwarding_unit.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv           ;         ;
-; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv                       ;         ;
-; controls.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv                  ;         ;
-; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv                   ;         ;
-; immgen.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/immgen.sv                    ;         ;
-; data_memory.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory.sv               ;         ;
-; pccalc.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc.sv                    ;         ;
-; mux3.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/mux3.sv                      ;         ;
-; inst_memory.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/inst_memory.sv               ;         ;
-; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv                ;         ;
-; fetch.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv                     ;         ;
-; decode.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv                    ;         ;
-; execute.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv                   ;         ;
-; memory.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv                    ;         ;
-; writeback.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv                 ;         ;
-; riscv_pipelined_processor.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 2     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 2     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+---------------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name               ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+---------------------------+--------------+
-; |riscv_pipelined_processor ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |riscv_pipelined_processor ; riscv_pipelined_processor ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+---------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |riscv_pipelined_processor ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; REG_WIDTH      ; 32    ; Signed Integer                                                   ;
-; REG_COUNT      ; 32    ; Signed Integer                                                   ;
-; NUM_MEM_LOCS   ; 64    ; Signed Integer                                                   ;
-; NUM_INST       ; 128   ; Signed Integer                                                   ;
-; ALU_SEL_WIDTH  ; 4     ; Signed Integer                                                   ;
-; CTRL_SIZE      ; 21    ; Signed Integer                                                   ;
-; REG_BITS       ; 5     ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetch:fetch_stage ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; NUM_INST       ; 128   ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetch:fetch_stage|inst_memory:instmem_obj ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; NUM_INST       ; 128   ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |data_memory_controller ;
++-----------------+-------+--------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                         ;
++-----------------+-------+--------------------------------------------------------------+
+; ADDR_WIDTH      ; 32    ; Signed Integer                                               ;
+; DATA_WIDTH      ; 32    ; Signed Integer                                               ;
+; NUM_MEM_BYTES   ; 256   ; Signed Integer                                               ;
+; CACHE_LINE_SIZE ; 16    ; Signed Integer                                               ;
+; MEM_ADDR_WIDTH  ; 4     ; Signed Integer                                               ;
++-----------------+-------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:decode_stage ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; REG_WIDTH      ; 32    ; Signed Integer                          ;
-; REG_COUNT      ; 32    ; Signed Integer                          ;
-; CTRL_SIZE      ; 21    ; Signed Integer                          ;
-; REG_BITS       ; 5     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: set_assc_cache:cache_memory_obj ;
++-----------------+-------+----------------------------------------------------+
+; Parameter Name  ; Value ; Type                                               ;
++-----------------+-------+----------------------------------------------------+
+; ADDR_WIDTH      ; 32    ; Signed Integer                                     ;
+; DATA_WIDTH      ; 32    ; Signed Integer                                     ;
+; CACHE_LINE_SIZE ; 16    ; Signed Integer                                     ;
+; NUM_MEM_BYTES   ; 256   ; Signed Integer                                     ;
+; NUM_CACHE_LINES ; 8     ; Signed Integer                                     ;
+; CACHE_SET_SIZE  ; 2     ; Signed Integer                                     ;
+; MEM_ADDR_WIDTH  ; 4     ; Signed Integer                                     ;
++-----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:decode_stage|regfile:regfile_obj ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                              ;
-; REG_COUNT      ; 32    ; Signed Integer                                              ;
-; REG_BITS       ; 5     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory_for_cache:data_memory_obj ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; LINE_SIZE      ; 16    ; Signed Integer                                            ;
+; BYTE_COUNT     ; 256   ; Signed Integer                                            ;
+; LINE_COUNT     ; 16    ; Signed Integer                                            ;
+; ADDR_SIZE      ; 4     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:decode_stage|controller:ctrl_obj ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; CTRL_SIZE      ; 21    ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                          ;
++------------------------------------------------------------------+------------------------+------------------------------+
+; Option                                                           ; Setting                ; Default Value                ;
++------------------------------------------------------------------+------------------------+------------------------------+
+; Top-level entity name                                            ; data_memory_controller ; riscv_single_cycle_processor ;
+; Family name                                                      ; Cyclone IV E           ; Cyclone V                    ;
+; Maximum processors allowed for parallel compilation              ; All                    ;                              ;
+; Verilog Show LMF Mapping Messages                                ; Off                    ;                              ;
+; Verilog Version                                                  ; SystemVerilog_2005     ; Verilog_2001                 ;
+; Use smart compilation                                            ; Off                    ; Off                          ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                     ; On                           ;
+; Enable compact report table                                      ; Off                    ; Off                          ;
+; Restructure Multiplexers                                         ; Auto                   ; Auto                         ;
+; Create Debugging Nodes for IP Cores                              ; Off                    ; Off                          ;
+; Preserve fewer node names                                        ; On                     ; On                           ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                 ; Enable                       ;
+; VHDL Version                                                     ; VHDL_1993              ; VHDL_1993                    ;
+; State Machine Processing                                         ; Auto                   ; Auto                         ;
+; Safe State Machine                                               ; Off                    ; Off                          ;
+; Extract Verilog State Machines                                   ; On                     ; On                           ;
+; Extract VHDL State Machines                                      ; On                     ; On                           ;
+; Ignore Verilog initial constructs                                ; Off                    ; Off                          ;
+; Iteration limit for constant Verilog loops                       ; 5000                   ; 5000                         ;
+; Iteration limit for non-constant Verilog loops                   ; 250                    ; 250                          ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                     ; On                           ;
+; Infer RAMs from Raw Logic                                        ; On                     ; On                           ;
+; Parallel Synthesis                                               ; On                     ; On                           ;
+; DSP Block Balancing                                              ; Auto                   ; Auto                         ;
+; NOT Gate Push-Back                                               ; On                     ; On                           ;
+; Power-Up Don't Care                                              ; On                     ; On                           ;
+; Remove Redundant Logic Cells                                     ; Off                    ; Off                          ;
+; Remove Duplicate Registers                                       ; On                     ; On                           ;
+; Ignore CARRY Buffers                                             ; Off                    ; Off                          ;
+; Ignore CASCADE Buffers                                           ; Off                    ; Off                          ;
+; Ignore GLOBAL Buffers                                            ; Off                    ; Off                          ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                    ; Off                          ;
+; Ignore LCELL Buffers                                             ; Off                    ; Off                          ;
+; Ignore SOFT Buffers                                              ; On                     ; On                           ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                    ; Off                          ;
+; Optimization Technique                                           ; Balanced               ; Balanced                     ;
+; Carry Chain Length                                               ; 70                     ; 70                           ;
+; Auto Carry Chains                                                ; On                     ; On                           ;
+; Auto Open-Drain Pins                                             ; On                     ; On                           ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                    ; Off                          ;
+; Auto ROM Replacement                                             ; On                     ; On                           ;
+; Auto RAM Replacement                                             ; On                     ; On                           ;
+; Auto DSP Block Replacement                                       ; On                     ; On                           ;
+; Auto Shift Register Replacement                                  ; Auto                   ; Auto                         ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                   ; Auto                         ;
+; Auto Clock Enable Replacement                                    ; On                     ; On                           ;
+; Strict RAM Replacement                                           ; Off                    ; Off                          ;
+; Allow Synchronous Control Signals                                ; On                     ; On                           ;
+; Force Use of Synchronous Clear Signals                           ; Off                    ; Off                          ;
+; Auto RAM Block Balancing                                         ; On                     ; On                           ;
+; Auto RAM to Logic Cell Conversion                                ; Off                    ; Off                          ;
+; Auto Resource Sharing                                            ; Off                    ; Off                          ;
+; Allow Any RAM Size For Recognition                               ; Off                    ; Off                          ;
+; Allow Any ROM Size For Recognition                               ; Off                    ; Off                          ;
+; Allow Any Shift Register Size For Recognition                    ; Off                    ; Off                          ;
+; Use LogicLock Constraints during Resource Balancing              ; On                     ; On                           ;
+; Ignore translate_off and synthesis_off directives                ; Off                    ; Off                          ;
+; Timing-Driven Synthesis                                          ; On                     ; On                           ;
+; Report Parameter Settings                                        ; On                     ; On                           ;
+; Report Source Assignments                                        ; On                     ; On                           ;
+; Report Connectivity Checks                                       ; On                     ; On                           ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                    ; Off                          ;
+; Synchronization Register Chain Length                            ; 2                      ; 2                            ;
+; Power Optimization During Synthesis                              ; Normal compilation     ; Normal compilation           ;
+; HDL message level                                                ; Level2                 ; Level2                       ;
+; Suppress Register Optimization Related Messages                  ; Off                    ; Off                          ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                   ; 5000                         ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                   ; 5000                         ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                    ; 100                          ;
+; Clock MUX Protection                                             ; On                     ; On                           ;
+; Auto Gated Clock Conversion                                      ; Off                    ; Off                          ;
+; Block Design Naming                                              ; Auto                   ; Auto                         ;
+; SDC constraint protection                                        ; Off                    ; Off                          ;
+; Synthesis Effort                                                 ; Auto                   ; Auto                         ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                     ; On                           ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                    ; Off                          ;
+; Analysis & Synthesis Message Level                               ; Medium                 ; Medium                       ;
+; Disable Register Merging Across Hierarchies                      ; Auto                   ; Auto                         ;
+; Resource Aware Inference For Block RAM                           ; On                     ; On                           ;
++------------------------------------------------------------------+------------------------+------------------------------+
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:execute_stage ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; REG_WIDTH      ; 32    ; Signed Integer                            ;
-; REG_COUNT      ; 32    ; Signed Integer                            ;
-; ALU_SEL_WIDTH  ; 4     ; Signed Integer                            ;
-; CTRL_SIZE      ; 21    ; Signed Integer                            ;
-; REG_BITS       ; 5     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:execute_stage|alu:alu_obj ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                        ;
-; ALU_SEL        ; 4     ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data1_mux ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:execute_stage|mux3:read_data2_mux ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: memory:memory_stage ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; REG_WIDTH      ; 32    ; Signed Integer                          ;
-; REG_COUNT      ; 32    ; Signed Integer                          ;
-; NUM_MEM_LOCS   ; 64    ; Signed Integer                          ;
-; CTRL_SIZE      ; 21    ; Signed Integer                          ;
-; REG_BITS       ; 5     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: memory:memory_stage|data_memory:datamem_obj ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; ADDR_WIDTH     ; 32    ; Signed Integer                                                  ;
-; DATA_WIDTH     ; 32    ; Signed Integer                                                  ;
-; NUM_LOCS       ; 64    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: writeback:writeback_stage ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; REG_WIDTH      ; 32    ; Signed Integer                                ;
-; REG_COUNT      ; 32    ; Signed Integer                                ;
-; CTRL_SIZE      ; 21    ; Signed Integer                                ;
-; REG_BITS       ; 5     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: writeback:writeback_stage|mux3:reg_src_mux ;
-+----------------+-------+----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                           ;
-+----------------+-------+----------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                 ;
-+----------------+-------+----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: forwarding_unit:fwd_unit ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; REG_BITS       ; 5     ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "decode:decode_stage|controller:ctrl_obj" ;
-+------------+-------+----------+-------------------------------------+
-; Port       ; Type  ; Severity ; Details                             ;
-+------------+-------+----------+-------------------------------------+
-; ex_no_stay ; Input ; Info     ; Stuck at VCC                        ;
-+------------+-------+----------+-------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Dec 30 23:23:00 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
+    Info: Processing started: Mon Jan 01 00:55:19 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor --analysis_and_elaboration
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory_for_cache.sv
+    Info (12023): Found entity 1: data_memory_for_cache File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_for_cache.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file forwarding_unit.sv
     Info (12023): Found entity 1: forwarding_unit File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
@@ -529,70 +270,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file riscv_p
     Info (12023): Found entity 1: riscv_pipelined_processor File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file set_assc_cache.sv
     Info (12023): Found entity 1: set_assc_cache File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/set_assc_cache.sv Line: 3
-Info (12127): Elaborating entity "riscv_pipelined_processor" for the top level hierarchy
-Info (12128): Elaborating entity "fetch" for hierarchy "fetch:fetch_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 42
-Info (12128): Elaborating entity "pccalc" for hierarchy "fetch:fetch_stage|pccalc:pclogic_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv Line: 17
-Info (12128): Elaborating entity "inst_memory" for hierarchy "fetch:fetch_stage|inst_memory:instmem_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv Line: 19
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "memory" into its bus
-Info (12128): Elaborating entity "decode" for hierarchy "decode:decode_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 46
-Info (12128): Elaborating entity "regfile" for hierarchy "decode:decode_stage|regfile:regfile_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv Line: 24
-Info (12128): Elaborating entity "immgen" for hierarchy "decode:decode_stage|immgen:immgen_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv Line: 29
-Info (12128): Elaborating entity "controller" for hierarchy "decode:decode_stage|controller:ctrl_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv Line: 31
-Warning (10030): Net "control_store[511..433]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[431..401]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[399]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[397]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[395]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[393]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[391..387]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[385]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[383..209]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[205]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[201]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[199]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[197]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[195]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[191..134]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[127..81]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[79]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[77]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[73]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[71]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[69]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[67]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[65]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[63..36]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[31..12]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Warning (10030): Net "control_store[7..6]" at controller.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv Line: 12
-Info (12128): Elaborating entity "execute" for hierarchy "execute:execute_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 51
-Warning (10036): Verilog HDL or VHDL warning at execute.sv(25): object "rs1" assigned a value but never read File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 25
-Warning (10036): Verilog HDL or VHDL warning at execute.sv(25): object "rs2" assigned a value but never read File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 25
-Info (12128): Elaborating entity "alu" for hierarchy "execute:execute_stage|alu:alu_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 33
-Info (12128): Elaborating entity "mux3" for hierarchy "execute:execute_stage|mux3:read_data1_mux" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv Line: 41
-Info (12128): Elaborating entity "memory" for hierarchy "memory:memory_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 56
-Info (12128): Elaborating entity "data_memory" for hierarchy "memory:memory_stage|data_memory:datamem_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv Line: 28
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "memory" into its bus
-Info (12128): Elaborating entity "writeback" for hierarchy "writeback:writeback_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 60
-Info (12128): Elaborating entity "forwarding_unit" for hierarchy "forwarding_unit:fwd_unit" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 63
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory_controller.sv
+    Info (12023): Found entity 1: data_memory_controller File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv Line: 2
+Info (12127): Elaborating entity "data_memory_controller" for the top level hierarchy
+Info (12128): Elaborating entity "set_assc_cache" for hierarchy "set_assc_cache:cache_memory_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv Line: 44
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "cache" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "tag_store" into its bus
+Info (12128): Elaborating entity "data_memory_for_cache" for hierarchy "data_memory_for_cache:data_memory_obj" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv Line: 47
 Info (144001): Generated suppressed messages file C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/output_files/riscv_single_cycle_processor.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 11
-    Warning (15610): No output dependent on input pin "rstn" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 12
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4742 megabytes
-    Info: Processing ended: Sat Dec 30 23:23:14 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:27
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Mon Jan 01 00:55:37 2024
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:30
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
 The suppressed messages can be found in C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/output_files/riscv_single_cycle_processor.map.smsg.
 
 

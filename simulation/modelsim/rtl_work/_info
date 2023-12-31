@@ -9,417 +9,105 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/modelsim
-valu
+vdata_memory_controller
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1703939060
+Z2 !s110 1704030966
 !i10b 1
-!s100 5S[?f_UXF?J@Q51[:bH6C2
+!s100 RDZYMXDb6L2W^R3fSWi0z1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IhScF]SH5:NzN<K<9W=TOd2
+IJCJ6kzmB1YP]E<NDeLQ481
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1703758890
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv
-!i122 5
-L0 3 32
+w1704021978
+8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv
+FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv
+!i122 2
+L0 2 50
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1703939060.000000
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv|
+Z6 !s108 1704030966.000000
+!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv|
 !i113 1
 Z7 o-sv -work work
 Z8 !s92 -sv -work work {+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor}
 Z9 tCvgOpt 0
-vcontroller
+vdata_memory_for_cache
 R1
-Z10 !s110 1703939063
+!s110 1704030965
 !i10b 1
-!s100 ^?Z@QR;j@G5?cjHj;HY^11
+!s100 JLWUzPa[ARc2_QUfLklmd3
 R3
-Ilm[_0`XKH1:b;Vho1VjGm3
+ID3:m]N8Pl^YnWfLB@MIgH3
 R4
 S1
 R0
-w1703937622
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv
-!i122 9
-L0 3 122
-R5
-r1
-!s85 0
-31
-Z11 !s108 1703939063.000000
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controller.sv|
-!i113 1
-R7
-R8
-R9
-vdata_memory
-R1
-R2
-!i10b 1
-!s100 Yz^Df@ZjGm6BanCcSe9]60
-R3
-I`SidXWiiSih_O0F?CUD_]3
-R4
-S1
-R0
-Z12 w1703739544
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory.sv
-!i122 7
-L0 3 54
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory.sv|
-!i113 1
-R7
-R8
-R9
-vdecode
-R1
-R10
-!i10b 1
-!s100 QCl268jAIS6lAfaCTQoD;0
-R3
-ICW_Z=AEX?G8UaBL9ILT;20
-R4
-S1
-R0
-w1703934335
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv
-!i122 11
-L0 2 44
-R5
-r1
-!s85 0
-31
-R11
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/decode.sv|
-!i113 1
-R7
-R8
-R9
-vexecute
-R1
-Z13 !s110 1703939064
-!i10b 1
-!s100 N^bWiig_D[=4;^5TbR7`41
-R3
-IkX;OfTihU:m[14YIn04J;0
-R4
-S1
-R0
-w1703938900
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv
-!i122 12
-L0 3 66
-R5
-r1
-!s85 0
-31
-R11
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/execute.sv|
-!i113 1
-R7
-R8
-R9
-vfetch
-R1
-R10
-!i10b 1
-!s100 dJzI=XH5Q^QZ;:6hYFem80
-R3
-I@XKMCi7>Fo72[;E7zDHlZ1
-R4
-S1
-R0
-w1703820041
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv
-!i122 10
-L0 3 24
-R5
-r1
-!s85 0
-31
-R11
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/fetch.sv|
-!i113 1
-R7
-R8
-R9
-vforwarding_unit
-R1
-!s110 1703939057
-!i10b 1
-!s100 `GXOF<LlZgQ282di2SD;10
-R3
-IS9GZhzKHN<24XIHK]O3RC2
-R4
-S1
-R0
-w1703935208
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv
+w1704020486
+8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_for_cache.sv
+FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_for_cache.sv
 !i122 0
-L0 1 58
+L0 1 35
 R5
 r1
 !s85 0
 31
-!s108 1703939056.000000
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/forwarding_unit.sv|
+!s108 1704030965.000000
+!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_for_cache.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_for_cache.sv|
 !i113 1
 R7
 R8
 R9
-vimmgen
+vdata_memory_tb
 R1
-R2
+!s110 1704030982
 !i10b 1
-!s100 HWgckBK2^]RUP=hE9J^j53
+!s100 MbKfM:Uij5bXEhLIha7eG0
 R3
-I^oEWQSIF[<9U^4`>>:EIR3
+ID_LzmTKDE@MIJ4UW:O0eY2
 R4
 S1
 R0
-R12
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/immgen.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/immgen.sv
-!i122 6
-L0 3 40
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/immgen.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/immgen.sv|
-!i113 1
-R7
-R8
-R9
-vinst_memory
-R1
-R2
-!i10b 1
-!s100 Q;J9^1^1[dM7d7MS=a?GG3
-R3
-I7INz60BO=<`9Vg0jkb01_3
-R4
-S1
-R0
-w1703938968
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/inst_memory.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/inst_memory.sv
+w1704029884
+8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/data_memory_tb.sv
+FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/data_memory_tb.sv
 !i122 3
-L0 2 33
+L0 5 74
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/inst_memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/inst_memory.sv|
-!i113 1
-R7
-R8
-R9
-vmemory
-R1
-R13
-!i10b 1
-!s100 g@?cc76@4j>IDIDz_J0IU2
-R3
-I:jIYY=RhSa;eQdSAmc_AZ1
-R4
-S1
-R0
-w1703934869
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv
-!i122 13
-L0 2 41
-R5
-r1
-!s85 0
-31
-Z14 !s108 1703939064.000000
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/memory.sv|
-!i113 1
-R7
-R8
-R9
-vmux3
-R1
-R2
-!i10b 1
-!s100 0L5E<ogU?m2JETDW`I<7g0
-R3
-IV`4[gUT05gXl^X6:S1ZlF1
-R4
-S1
-R0
-R12
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/mux3.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/mux3.sv
-!i122 2
-L0 1 17
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/mux3.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/mux3.sv|
-!i113 1
-R7
-R8
-R9
-vpccalc
-R1
-R10
-!i10b 1
-!s100 ARg4d33IVi6FfAWHIi1nd1
-R3
-IIDHjbc3;>;:<9fg8bjPT=3
-R4
-S1
-R0
-w1703764677
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc.sv
-!i122 8
-L0 3 38
-R5
-r1
-!s85 0
-31
-R11
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc.sv|
-!i113 1
-R7
-R8
-R9
-vregfile
-R1
-R2
-!i10b 1
-!s100 >o?K]8NeTd3a0`nYVn;^G3
-R3
-I57zbNCm_=Gj?JAOE:FfP]1
-R4
-S1
-R0
-w1703819488
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv
-!i122 1
-L0 2 26
-R5
-r1
-!s85 0
-31
-!s108 1703939059.000000
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/regfile.sv|
-!i113 1
-R7
-R8
-R9
-vriscv_pipelined_processor
-R1
-R13
-!i10b 1
-!s100 [d5`jb5nh95KD288BYAL40
-R3
-IiQAaM0@[=74e[kz8jaTJ23
-R4
-S1
-R0
-w1703936254
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv
-!i122 14
-L0 2 74
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv|
-!i113 1
-R7
-R8
-R9
-vtop_tb
-R1
-!s110 1703939067
-!i10b 1
-!s100 9gaPn]Z4CS5WPan4d8>a12
-R3
-IPi=K0_5@`1i2Q9ZPoULiS2
-R4
-S1
-R0
-w1703773912
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/top_tb.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/top_tb.sv
-!i122 15
-L0 5 26
-R5
-r1
-!s85 0
-31
-!s108 1703939066.000000
-!s107 C:\Users\anuki\OneDrive - University of Moratuwa\Documents\Anuki\Campus\Semester 5\EN3021 Digital System Design\pipelined-riscv-processor\simulation\..\controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/top_tb.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/top_tb.sv|
+!s108 1704030982.000000
+!s107 C:\Users\anuki\OneDrive - University of Moratuwa\Documents\Anuki\Campus\Semester 5\EN3021 Digital System Design\pipelined-riscv-processor\simulation\..\controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/data_memory_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/data_memory_tb.sv|
 !i113 1
 o-work work
 R9
-vwriteback
+vset_assc_cache
 R1
 R2
 !i10b 1
-!s100 1nb]>c`12T08WXBSh_dFa1
+!s100 B3_IO1ZSTUTlSMj^Z^a`n2
 R3
-IH;:4zLCNFDeB4=B`kV8^43
+ISE3QlD@S8TW^R378cd1P00
 R4
 S1
 R0
-w1703934861
-8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv
-FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv
-!i122 4
-L0 2 27
+w1704030919
+8C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/set_assc_cache.sv
+FC:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/set_assc_cache.sv
+!i122 1
+L0 3 171
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/writeback.sv|
+!s107 C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/controls.sv|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/set_assc_cache.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor|C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/set_assc_cache.sv|
 !i113 1
 R7
 R8

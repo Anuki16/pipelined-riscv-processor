@@ -1,0 +1,35 @@
+module CacheMemory #(
+
+	parameter LINE_SIZE = 16,
+	parameter BYTE_COUNT = 1024,
+	parameter LINE_COUNT = BYTE_COUNT/LINE_SIZE,
+	parameter ADDR_SIZE = $clog2(BYTE_COUNT)
+
+)(
+	
+	input logic clk,
+	input logic wr_en, //write enable
+	input logic [LINE_SIZE*8 -1:0] wr_data, 
+	input logic [ADDR_SIZE -1:0] input_addr,
+	output logic [LINE_SIZE*8 -1:0] rd_data //data read from memory address
+	
+);
+
+
+	//memory 
+	logic [LINE_SIZE*8 -1:0] cache_mem[LINE_COUNT -1:0]; 
+	
+	logic [$clog2(LINE_COUNT) -1:0] addr_line;
+	assign addr_line = input_addr / LINE_SIZE; //line number of the input address in the memory 
+
+
+	assign rd_data = cache_mem[addr_line];
+
+	
+	always @(posedge clk) begin
+		if (wr_en) begin
+			cache_mem[addr_line] = wr_data;
+		end
+	end
+
+endmodule
