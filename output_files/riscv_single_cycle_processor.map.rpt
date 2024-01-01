@@ -1,5 +1,5 @@
 Analysis & Synthesis report for riscv_single_cycle_processor
-Mon Jan 01 22:24:26 2024
+Mon Jan 01 22:55:53 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,39 +13,36 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: Top-level Entity: |processor_fpga
- 15. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc
- 16. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|fetch:fetch_stage
- 17. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu
- 18. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|fetch:fetch_stage|inst_memory:instmem_obj
- 19. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|decode:decode_stage
- 20. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj
- 21. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|decode:decode_stage|controller:ctrl_obj
- 22. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage
- 23. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj
- 24. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data1_mux
- 25. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data2_mux
- 26. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage
- 27. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj
- 28. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj
- 29. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|data_memory_for_cache:data_memory_obj
- 30. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|writeback:writeback_stage
- 31. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|writeback:writeback_stage|mux3:reg_src_mux
- 32. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|forwarding_unit:fwd_unit
- 33. Parameter Settings for Inferred Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0
- 34. lpm_mult Parameter Settings by Entity Instance
- 35. Port Connectivity Checks: "riscv_pipelined_processor:proc|decode:decode_stage|controller:ctrl_obj"
- 36. Port Connectivity Checks: "riscv_pipelined_processor:proc"
- 37. Post-Synthesis Netlist Statistics for Top Partition
- 38. Elapsed Time Per Partition
- 39. Analysis & Synthesis Messages
- 40. Analysis & Synthesis Suppressed Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |processor_fpga
+ 14. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc
+ 15. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|fetch:fetch_stage
+ 16. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu
+ 17. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|fetch:fetch_stage|inst_memory:instmem_obj
+ 18. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|decode:decode_stage
+ 19. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj
+ 20. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|decode:decode_stage|controller:ctrl_obj
+ 21. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage
+ 22. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj
+ 23. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data1_mux
+ 24. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data2_mux
+ 25. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage
+ 26. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj
+ 27. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj
+ 28. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|data_memory_for_cache:data_memory_obj
+ 29. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|writeback:writeback_stage
+ 30. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|writeback:writeback_stage|mux3:reg_src_mux
+ 31. Parameter Settings for User Entity Instance: riscv_pipelined_processor:proc|forwarding_unit:fwd_unit
+ 32. Port Connectivity Checks: "riscv_pipelined_processor:proc|decode:decode_stage|controller:ctrl_obj"
+ 33. Port Connectivity Checks: "riscv_pipelined_processor:proc"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
+ 37. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -72,19 +69,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jan 01 22:24:25 2024       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 01 22:55:53 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; riscv_single_cycle_processor                ;
 ; Top-level Entity Name              ; processor_fpga                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 10,107                                      ;
-;     Total combinational functions  ; 6,967                                       ;
-;     Dedicated logic registers      ; 4,195                                       ;
-; Total registers                    ; 4195                                        ;
+; Total logic elements               ; 10,054                                      ;
+;     Total combinational functions  ; 6,914                                       ;
+;     Dedicated logic registers      ; 4,192                                       ;
+; Total registers                    ; 4192                                        ;
 ; Total pins                         ; 51                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 6                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
@@ -185,12 +182,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.3%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
@@ -224,13 +221,6 @@ https://fpgasoftware.intel.com/eula.
 ; data_memory_controller.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/data_memory_controller.sv    ;         ;
 ; pccalc_pred.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/pccalc_pred.sv               ;         ;
 ; clock_divide_half.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/clock_divide_half.sv         ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                                                                    ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                                                                  ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                                                 ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc                                                                                                    ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                                                                                    ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                                                                                    ;         ;
-; db/mult_7dt.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/db/mult_7dt.tdf              ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -239,29 +229,29 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------+
 ; Resource                                    ; Usage                            ;
 +---------------------------------------------+----------------------------------+
-; Estimated Total logic elements              ; 10,107                           ;
+; Estimated Total logic elements              ; 10,054                           ;
 ;                                             ;                                  ;
-; Total combinational functions               ; 6967                             ;
+; Total combinational functions               ; 6914                             ;
 ; Logic element usage by number of LUT inputs ;                                  ;
-;     -- 4 input functions                    ; 5253                             ;
-;     -- 3 input functions                    ; 1429                             ;
-;     -- <=2 input functions                  ; 285                              ;
+;     -- 4 input functions                    ; 5217                             ;
+;     -- 3 input functions                    ; 1467                             ;
+;     -- <=2 input functions                  ; 230                              ;
 ;                                             ;                                  ;
 ; Logic elements by mode                      ;                                  ;
-;     -- normal mode                          ; 6730                             ;
-;     -- arithmetic mode                      ; 237                              ;
+;     -- normal mode                          ; 6703                             ;
+;     -- arithmetic mode                      ; 211                              ;
 ;                                             ;                                  ;
-; Total registers                             ; 4195                             ;
-;     -- Dedicated logic registers            ; 4195                             ;
+; Total registers                             ; 4192                             ;
+;     -- Dedicated logic registers            ; 4192                             ;
 ;     -- I/O registers                        ; 0                                ;
 ;                                             ;                                  ;
 ; I/O pins                                    ; 51                               ;
 ;                                             ;                                  ;
-; Embedded Multiplier 9-bit elements          ; 6                                ;
+; Embedded Multiplier 9-bit elements          ; 0                                ;
 ;                                             ;                                  ;
 ; Maximum fan-out node                        ; clock_divide_half:clk_divide|clk ;
-; Maximum fan-out                             ; 4195                             ;
-; Total fan-out                               ; 43433                            ;
+; Maximum fan-out                             ; 4192                             ;
+; Total fan-out                               ; 43177                            ;
 ; Average fan-out                             ; 3.85                             ;
 +---------------------------------------------+----------------------------------+
 
@@ -271,7 +261,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                         ; Entity Name               ; Library Name ;
 +-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; |processor_fpga                                     ; 6967 (0)            ; 4195 (0)                  ; 0           ; 6            ; 0       ; 3         ; 51   ; 0            ; |processor_fpga                                                                                                                             ; processor_fpga            ; work         ;
+; |processor_fpga                                     ; 6914 (0)            ; 4192 (0)                  ; 0           ; 0            ; 0       ; 0         ; 51   ; 0            ; |processor_fpga                                                                                                                             ; processor_fpga            ; work         ;
 ;    |binary_to_7seg:ss1|                             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|binary_to_7seg:ss1                                                                                                          ; binary_to_7seg            ; work         ;
 ;    |binary_to_7seg:ss2|                             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|binary_to_7seg:ss2                                                                                                          ; binary_to_7seg            ; work         ;
 ;    |binary_to_7seg:ss3|                             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|binary_to_7seg:ss3                                                                                                          ; binary_to_7seg            ; work         ;
@@ -280,19 +270,17 @@ https://fpgasoftware.intel.com/eula.
 ;    |binary_to_7seg:ss6|                             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|binary_to_7seg:ss6                                                                                                          ; binary_to_7seg            ; work         ;
 ;    |binary_to_7seg:ss7|                             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|binary_to_7seg:ss7                                                                                                          ; binary_to_7seg            ; work         ;
 ;    |clock_divide_half:clk_divide|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|clock_divide_half:clk_divide                                                                                                ; clock_divide_half         ; work         ;
-;    |riscv_pipelined_processor:proc|                 ; 6917 (0)            ; 4194 (0)                  ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc                                                                                              ; riscv_pipelined_processor ; work         ;
-;       |decode:decode_stage|                         ; 1213 (1145)         ; 1147 (155)                ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage                                                                          ; decode                    ; work         ;
-;          |controller:ctrl_obj|                      ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|controller:ctrl_obj                                                      ; controller                ; work         ;
+;    |riscv_pipelined_processor:proc|                 ; 6864 (0)            ; 4191 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc                                                                                              ; riscv_pipelined_processor ; work         ;
+;       |decode:decode_stage|                         ; 1210 (1138)         ; 1145 (153)                ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage                                                                          ; decode                    ; work         ;
+;          |controller:ctrl_obj|                      ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|controller:ctrl_obj                                                      ; controller                ; work         ;
 ;          |immgen:immgen_obj|                        ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|immgen:immgen_obj                                                        ; immgen                    ; work         ;
 ;          |regfile:regfile_obj|                      ; 39 (39)             ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj                                                      ; regfile                   ; work         ;
-;       |execute:execute_stage|                       ; 1115 (167)          ; 108 (108)                 ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage                                                                        ; execute                   ; work         ;
-;          |alu:alu_obj|                              ; 852 (824)           ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj                                                            ; alu                       ; work         ;
-;             |lpm_mult:Mult0|                        ; 28 (0)              ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0                                             ; lpm_mult                  ; work         ;
-;                |mult_7dt:auto_generated|            ; 28 (28)             ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0|mult_7dt:auto_generated                     ; mult_7dt                  ; work         ;
-;          |mux3:read_data2_mux|                      ; 96 (96)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data2_mux                                                    ; mux3                      ; work         ;
-;       |fetch:fetch_stage|                           ; 332 (33)            ; 120 (59)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage                                                                            ; fetch                     ; work         ;
-;          |inst_memory:instmem_obj|                  ; 62 (62)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|inst_memory:instmem_obj                                                    ; inst_memory               ; work         ;
-;          |pccalc_pred:pclogic_obj|                  ; 237 (142)           ; 61 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj                                                    ; pccalc_pred               ; work         ;
+;       |execute:execute_stage|                       ; 1062 (160)          ; 108 (108)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage                                                                        ; execute                   ; work         ;
+;          |alu:alu_obj|                              ; 808 (808)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj                                                            ; alu                       ; work         ;
+;          |mux3:read_data2_mux|                      ; 94 (94)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data2_mux                                                    ; mux3                      ; work         ;
+;       |fetch:fetch_stage|                           ; 335 (33)            ; 119 (58)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage                                                                            ; fetch                     ; work         ;
+;          |inst_memory:instmem_obj|                  ; 61 (61)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|inst_memory:instmem_obj                                                    ; inst_memory               ; work         ;
+;          |pccalc_pred:pclogic_obj|                  ; 241 (146)           ; 61 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj                                                    ; pccalc_pred               ; work         ;
 ;             |branch_target:btu|                     ; 95 (32)             ; 28 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu                                  ; branch_target             ; work         ;
 ;                |branch_pred:bpu|                    ; 63 (63)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu                  ; branch_pred               ; work         ;
 ;       |forwarding_unit:fwd_unit|                    ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_fpga|riscv_pipelined_processor:proc|forwarding_unit:fwd_unit                                                                     ; forwarding_unit           ; work         ;
@@ -306,24 +294,6 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary        ;
-+---------------------------------------+-------------+
-; Statistic                             ; Number Used ;
-+---------------------------------------+-------------+
-; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 3           ;
-; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 6           ;
-; Signed Embedded Multipliers           ; 0           ;
-; Unsigned Embedded Multipliers         ; 3           ;
-; Mixed Sign Embedded Multipliers       ; 0           ;
-; Variable Sign Embedded Multipliers    ; 0           ;
-; Dedicated Input Shift Register Chains ; 0           ;
-+---------------------------------------+-------------+
-Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
-
-
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                                                                                                                                                       ;
 +----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
@@ -334,42 +304,45 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[36]                                                   ; Merged with riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[52]    ;
 ; riscv_pipelined_processor:proc|execute:execute_stage|exc_mem_reg[108]                                                ; Merged with riscv_pipelined_processor:proc|execute:execute_stage|exc_mem_reg[103] ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[62,64]                                                ; Merged with riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[60]    ;
+; riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[63]                                                   ; Merged with riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[59]    ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[42]                                                   ; Merged with riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[40]    ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[141]                                                  ; Merged with riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[136]   ;
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[62,64]                                                ; Merged with riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[60]    ;
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[34]                                                   ; Merged with riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[33]    ;
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[44]                                                   ; Merged with riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[39]    ;
+; riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[63]                                                   ; Merged with riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[59]    ;
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[52]                                                   ; Stuck at GND due to stuck port data_in                                            ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[164]                                                  ; Stuck at GND due to stuck port data_in                                            ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[40]                                                   ; Merged with riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[52]    ;
+; riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[39]                                                   ; Merged with riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[43]    ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][4]                               ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][5]                               ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][6]                               ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][7]                               ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][8]                               ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][9]                               ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][10]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][11]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][12]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][13]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][14]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][16]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][17]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][18]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][19]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][20]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][21]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][22]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][23]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][24]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][25]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][26]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][27]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][28]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][29]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][30]                              ; Stuck at GND due to stuck port clock_enable                                       ;
-; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][31]                              ; Stuck at GND due to stuck port clock_enable                                       ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][15]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][23]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][22]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][21]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][20]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][26]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][19]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][18]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][17]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][16]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][14]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][13]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][12]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][11]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][10]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][9]                               ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][8]                               ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][7]                               ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][6]                               ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][5]                               ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][25]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][24]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][31]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][30]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][29]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][28]                              ; Stuck at GND due to stuck port clock_enable                                       ;
+; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][27]                              ; Stuck at GND due to stuck port clock_enable                                       ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][2]                               ; Stuck at GND due to stuck port clock_enable                                       ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][3]                               ; Stuck at GND due to stuck port clock_enable                                       ;
 ; riscv_pipelined_processor:proc|decode:decode_stage|regfile:regfile_obj|registers[0][0]                               ; Stuck at GND due to stuck port clock_enable                                       ;
@@ -386,7 +359,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu|LHT[5][2] ; Stuck at GND due to stuck port clock_enable                                       ;
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu|LHT[4][2] ; Stuck at GND due to stuck port clock_enable                                       ;
 ; riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu|LHT[7][2] ; Stuck at GND due to stuck port clock_enable                                       ;
-; Total Number of Removed Registers = 67                                                                               ;                                                                                   ;
+; Total Number of Removed Registers = 70                                                                               ;                                                                                   ;
 +----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -409,12 +382,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4195  ;
-; Number of registers using Synchronous Clear  ; 109   ;
+; Total registers                              ; 4192  ;
+; Number of registers using Synchronous Clear  ; 108   ;
 ; Number of registers using Synchronous Load   ; 255   ;
-; Number of registers using Asynchronous Clear ; 4195  ;
+; Number of registers using Asynchronous Clear ; 4192  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4166  ;
+; Number of registers using Clock Enable       ; 4163  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -449,98 +422,99 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 106 bits  ; 212 LEs       ; 106 LEs              ; 106 LEs                ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[22]                                                                       ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|w_addr[2]          ;
-; 5:1                ; 27 bits   ; 81 LEs        ; 81 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|pc[10]                                                          ;
+; 3:1                ; 105 bits  ; 210 LEs       ; 105 LEs              ; 105 LEs                ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|fetch_dec_reg[43]                                                                       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|w_addr[3]          ;
+; 5:1                ; 27 bits   ; 81 LEs        ; 81 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|pc[8]                                                           ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|pc[6]                                                           ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[140]                                                                      ;
-; 10:1               ; 7 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[39]                                                                        ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[142]                                                                      ;
+; 10:1               ; 7 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[38]                                                                        ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[37]                                                                       ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[41]                                                                       ;
-; 11:1               ; 8 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[50]                                                                        ;
-; 18:1               ; 7 bits    ; 84 LEs        ; 84 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[48]                                                                        ;
-; 18:1               ; 32 bits   ; 384 LEs       ; 352 LEs              ; 32 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[113]                                                                      ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[56]                                                                       ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[61]                                                                        ;
-; 34:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[82]                                                                       ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][9]     ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][8]     ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][9]     ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[41]                                                                       ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[52]                                                                        ;
+; 18:1               ; 7 bits    ; 84 LEs        ; 84 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[45]                                                                        ;
+; 18:1               ; 32 bits   ; 384 LEs       ; 352 LEs              ; 32 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[105]                                                                      ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[50]                                                                       ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|mem_wb_reg[64]                                                                        ;
+; 34:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|decode:decode_stage|dec_exc_reg[76]                                                                       ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][8]     ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][11]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][12]    ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][12]    ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][19]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][19]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][16]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][22]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][28]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][27]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][28]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][20]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][20]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][20]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][29]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][25]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][26]    ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][28]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][35]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][35]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][36]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][36]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][34]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][34]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][34]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][35]    ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][43]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][41]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][46]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][45]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][43]    ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][45]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][49]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][53]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][50]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][54]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][62]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][57]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][59]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][62]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][69]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][65]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][66]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][66]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][73]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][76]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][72]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][78]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][80]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][80]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][80]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][84]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][92]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][53]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][50]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][53]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][48]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][59]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][62]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][60]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][56]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][70]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][69]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][70]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][64]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][75]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][72]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][74]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][73]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][85]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][84]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][82]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][80]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][91]    ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][88]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][94]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][92]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][102]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][96]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][98]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][100]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][105]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][88]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][88]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][101]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][99]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][100]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][96]    ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][107]   ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][110]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][110]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][108]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][116]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][114]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][116]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][117]   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][125]   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][123]   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][124]   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][121]   ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][1]     ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][5]     ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][3]     ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][5]     ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|writeback:writeback_stage|mux3:reg_src_mux|Mux12                                                          ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data2_mux|Mux24                                                           ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 256 LEs              ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cur_cache_line[22] ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|bus_a[9]                                                                            ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][108]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][107]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][115]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][113]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][112]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][114]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][123]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][122]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][121]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][120]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][0][6]     ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[0][1][7]     ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][1][5]     ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cache[1][0][1]     ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|writeback:writeback_stage|mux3:reg_src_mux|Mux17                                                          ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|mux3:read_data2_mux|Mux29                                                           ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 256 LEs              ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|set_assc_cache:cache_memory_obj|cur_cache_line[64] ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|bus_a[15]                                                                           ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu|Mux2                          ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu|Mux6                          ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu|Mux5                          ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|fetch:fetch_stage|pccalc_pred:pclogic_obj|branch_target:btu|branch_pred:bpu|Mux3                          ;
-; 16:1               ; 128 bits  ; 1280 LEs      ; 1280 LEs             ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|data_memory_for_cache:data_memory_obj|Mux44        ;
-; 21:1               ; 7 bits    ; 98 LEs        ; 70 LEs               ; 28 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux8                                                                    ;
-; 20:1               ; 7 bits    ; 91 LEs        ; 70 LEs               ; 21 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux18                                                                   ;
-; 22:1               ; 4 bits    ; 56 LEs        ; 44 LEs               ; 12 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux5                                                                    ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 44 LEs               ; 12 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux27                                                                   ;
-; 23:1               ; 2 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux2                                                                    ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux29                                                                   ;
+; 16:1               ; 128 bits  ; 1280 LEs      ; 1280 LEs             ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|memory:memory_stage|data_memory_controller:datamem_obj|data_memory_for_cache:data_memory_obj|Mux81        ;
+; 1:1                ; 31 bits   ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Add0                                                                    ;
+; 19:1               ; 7 bits    ; 84 LEs        ; 63 LEs               ; 21 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux11                                                                   ;
+; 18:1               ; 7 bits    ; 84 LEs        ; 63 LEs               ; 21 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux18                                                                   ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 40 LEs               ; 12 LEs                 ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux7                                                                    ;
+; 19:1               ; 4 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux25                                                                   ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux3                                                                    ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 20 LEs               ; 6 LEs                  ; No         ; |processor_fpga|riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mux28                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -776,61 +750,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0 ;
-+------------------------------------------------+--------------+------------------------------------------------------------------+
-; Parameter Name                                 ; Value        ; Type                                                             ;
-+------------------------------------------------+--------------+------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                                       ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                                     ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                                     ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                                   ;
-; LPM_WIDTHA                                     ; 32           ; Untyped                                                          ;
-; LPM_WIDTHB                                     ; 32           ; Untyped                                                          ;
-; LPM_WIDTHP                                     ; 64           ; Untyped                                                          ;
-; LPM_WIDTHR                                     ; 64           ; Untyped                                                          ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                                                          ;
-; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                                                          ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                                                          ;
-; LATENCY                                        ; 0            ; Untyped                                                          ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                                          ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                                                          ;
-; USE_EAB                                        ; OFF          ; Untyped                                                          ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped                                                          ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                                          ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                                          ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                                              ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                                          ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                                          ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                                          ;
-; CBXI_PARAMETER                                 ; mult_7dt     ; Untyped                                                          ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                                          ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                                          ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                                          ;
-+------------------------------------------------+--------------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                                                                          ;
-+---------------------------------------+---------------------------------------------------------------------------------+
-; Name                                  ; Value                                                                           ;
-+---------------------------------------+---------------------------------------------------------------------------------+
-; Number of entity instances            ; 1                                                                               ;
-; Entity Instance                       ; riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 32                                                                              ;
-;     -- LPM_WIDTHB                     ; 32                                                                              ;
-;     -- LPM_WIDTHP                     ; 64                                                                              ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                                                                        ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                              ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                              ;
-;     -- USE_EAB                        ; OFF                                                                             ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                            ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                              ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                              ;
-+---------------------------------------+---------------------------------------------------------------------------------+
-
-
 +----------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "riscv_pipelined_processor:proc|decode:decode_stage|controller:ctrl_obj" ;
 +------------+-------+----------+--------------------------------------------------------------------+
@@ -857,27 +776,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 51                          ;
-; cycloneiii_ff         ; 4195                        ;
+; cycloneiii_ff         ; 4192                        ;
 ;     CLR               ; 28                          ;
 ;     CLR SCLR          ; 1                           ;
-;     ENA CLR           ; 3811                        ;
-;     ENA CLR SCLR      ; 100                         ;
+;     ENA CLR           ; 3809                        ;
+;     ENA CLR SCLR      ; 99                          ;
 ;     ENA CLR SCLR SLD  ; 8                           ;
 ;     ENA CLR SLD       ; 247                         ;
-; cycloneiii_lcell_comb ; 6974                        ;
-;     arith             ; 237                         ;
+; cycloneiii_lcell_comb ; 6921                        ;
+;     arith             ; 211                         ;
 ;         2 data inputs ; 86                          ;
-;         3 data inputs ; 151                         ;
-;     normal            ; 6737                        ;
+;         3 data inputs ; 125                         ;
+;     normal            ; 6710                        ;
 ;         1 data inputs ; 12                          ;
-;         2 data inputs ; 194                         ;
-;         3 data inputs ; 1278                        ;
-;         4 data inputs ; 5253                        ;
-; cycloneiii_mac_mult   ; 3                           ;
-; cycloneiii_mac_out    ; 3                           ;
+;         2 data inputs ; 139                         ;
+;         3 data inputs ; 1342                        ;
+;         4 data inputs ; 5217                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 27.00                       ;
-; Average LUT depth     ; 8.24                        ;
+; Max LUT depth         ; 28.00                       ;
+; Average LUT depth     ; 8.31                        ;
 +-----------------------+-----------------------------+
 
 
@@ -886,7 +803,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:05     ;
+; Top            ; 00:00:43     ;
 +----------------+--------------+
 
 
@@ -896,7 +813,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jan 01 22:23:03 2024
+    Info: Processing started: Mon Jan 01 22:54:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file branch_target.sv
@@ -1023,27 +940,6 @@ Info (12128): Elaborating entity "data_memory_for_cache" for hierarchy "riscv_pi
 Info (12128): Elaborating entity "writeback" for hierarchy "riscv_pipelined_processor:proc|writeback:writeback_stage" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 63
 Info (12128): Elaborating entity "forwarding_unit" for hierarchy "riscv_pipelined_processor:proc|forwarding_unit:fwd_unit" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/riscv_pipelined_processor.sv Line: 66
 Info (12128): Elaborating entity "binary_to_7seg" for hierarchy "binary_to_7seg:ss1" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/processor_fpga.sv Line: 34
-Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|Mult0" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv Line: 27
-Info (12130): Elaborated megafunction instantiation "riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv Line: 27
-Info (12133): Instantiated megafunction "riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0" with the following parameter: File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/alu.sv Line: 27
-    Info (12134): Parameter "LPM_WIDTHA" = "32"
-    Info (12134): Parameter "LPM_WIDTHB" = "32"
-    Info (12134): Parameter "LPM_WIDTHP" = "64"
-    Info (12134): Parameter "LPM_WIDTHR" = "64"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_7dt.tdf
-    Info (12023): Found entity 1: mult_7dt File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/db/mult_7dt.tdf Line: 31
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following DSP element node(s):
-        Warning (14320): Synthesized away node "riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0|mult_7dt:auto_generated|mac_mult7" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/db/mult_7dt.tdf Line: 67
-        Warning (14320): Synthesized away node "riscv_pipelined_processor:proc|execute:execute_stage|alu:alu_obj|lpm_mult:Mult0|mult_7dt:auto_generated|mac_out8" File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/db/mult_7dt.tdf Line: 91
-Info (13014): Ignored 84 buffer(s)
-    Info (13019): Ignored 84 SOFT buffer(s)
 Info (13000): Registers with preset signals will power-up high File: C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/branch_pred.sv Line: 35
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
@@ -1051,16 +947,15 @@ Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/output_files/riscv_single_cycle_processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 10368 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 10311 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 49 output pins
-    Info (21061): Implemented 10311 logic cells
-    Info (21062): Implemented 6 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Mon Jan 01 22:24:26 2024
-    Info: Elapsed time: 00:01:23
-    Info: Total CPU time (on all processors): 00:01:28
+    Info (21061): Implemented 10260 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Mon Jan 01 22:55:53 2024
+    Info: Elapsed time: 00:00:59
+    Info: Total CPU time (on all processors): 00:01:11
 
 
 +------------------------------------------+

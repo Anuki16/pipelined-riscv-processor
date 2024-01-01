@@ -24,7 +24,7 @@ module alu #(
 			`ALU_SLTU: alu_out = $unsigned(bus_a) < $unsigned(bus_b);
 			`ALU_A:	 alu_out = bus_a;
 			`ALU_B:	 alu_out = bus_b;
-			`ALU_MUL: alu_out = $unsigned(bus_a) * $unsigned(bus_b);
+			//`ALU_MUL: alu_out = $unsigned(bus_a) * $unsigned(bus_b);
 			default: alu_out = 'b0;
 		endcase
 	end

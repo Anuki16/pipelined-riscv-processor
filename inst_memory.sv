@@ -23,7 +23,7 @@ module inst_memory #(parameter NUM_INST = 128)
 	assign memory[9] = 32'b0;													// nop
 	assign memory[10] = 32'b0000000_01100_01011_000_10000_1100011;	// beq x11, x12, 8		remember to change this if you remove the nops
 	assign memory[11] = 32'b00000000110000101000001010010011;		// addi x5 x5 12	
-	assign memory[12] = 32'b0100000_00101_00111_111_00101_0110011;	// mul x5 x7 x5	-> x5 = 240 = 0xF0
+	assign memory[12] = 32'b0000000_00101_00111_100_00101_0110011;	// xor x5 x7 x5	-> x5 = 56 = 0x38
 	
 	assign memory[13]= 32'b00000000000000000000001100010011;         //addi x6, x0, 0         -> load i=0 to r2 
 	assign memory[14]= 32'b00000000001100000000000010010011;         //addi x1, x0, 3         -> load 3 to r1
