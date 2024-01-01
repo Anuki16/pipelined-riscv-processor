@@ -1,5 +1,5 @@
 EDA Netlist Writer report for riscv_single_cycle_processor
-Mon Jan 01 21:15:52 2024
+Mon Jan 01 22:27:17 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jan 01 21:15:52 2024 ;
+; EDA Netlist Writer Status ; Successful - Mon Jan 01 22:27:17 2024 ;
 ; Revision Name             ; riscv_single_cycle_processor          ;
 ; Top-level Entity Name     ; processor_fpga                        ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jan 01 21:15:40 2024
+    Info: Processing started: Mon Jan 01 22:27:02 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
 Info (204019): Generated file riscv_single_cycle_processor_7_1200mv_85c_slow.svo in folder "C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file riscv_single_cycle_processor_7_1200mv_0c_slow.svo in folder "C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file riscv_single_cycle_processor_7_1200mv_0c_v_slow.sd
 Info (204019): Generated file riscv_single_cycle_processor_min_1200mv_0c_v_fast.sdo in folder "C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file riscv_single_cycle_processor_v.sdo in folder "C:/Users/anuki/OneDrive - University of Moratuwa/Documents/Anuki/Campus/Semester 5/EN3021 Digital System Design/pipelined-riscv-processor/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4737 megabytes
-    Info: Processing ended: Mon Jan 01 21:15:52 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Mon Jan 01 22:27:17 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:13
 
 

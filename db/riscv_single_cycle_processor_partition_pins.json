@@ -200,11 +200,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "rstn",
 					"strict" : false
 				},
 				{
-					"name" : "rstn",
+					"name" : "clk50",
 					"strict" : false
 				}
 			]

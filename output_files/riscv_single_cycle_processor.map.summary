@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Jan 01 21:13:14 2024
+Analysis & Synthesis Status : Successful - Mon Jan 01 22:24:25 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : riscv_single_cycle_processor
 Top-level Entity Name : processor_fpga
 Family : Cyclone IV E
 Total logic elements : 10,107
     Total combinational functions : 6,967
-    Dedicated logic registers : 4,194
-Total registers : 4194
+    Dedicated logic registers : 4,195
+Total registers : 4195
 Total pins : 51
 Total virtual pins : 0
 Total memory bits : 0

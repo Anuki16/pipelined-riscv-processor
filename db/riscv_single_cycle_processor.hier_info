@@ -1,5 +1,6 @@
 |processor_fpga
-clk => riscv_pipelined_processor:proc.clk
+clk50 => clock_divide_half:clk_divide.clk50
+rstn => clock_divide_half:clk_divide.rstn
 rstn => riscv_pipelined_processor:proc.rstn
 out1[0] << binary_to_7seg:ss2.data_out
 out1[1] << binary_to_7seg:ss2.data_out
@@ -50,6 +51,12 @@ out7[3] << binary_to_7seg:ss7.data_out
 out7[4] << binary_to_7seg:ss7.data_out
 out7[5] << binary_to_7seg:ss7.data_out
 out7[6] << binary_to_7seg:ss7.data_out
+
+
+|processor_fpga|clock_divide_half:clk_divide
+clk50 => clk~reg0.CLK
+rstn => clk~reg0.ACLR
+clk <= clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor_fpga|riscv_pipelined_processor:proc

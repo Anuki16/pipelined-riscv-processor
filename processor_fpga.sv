@@ -7,13 +7,14 @@ module processor_fpga #(
 	parameter ALU_SEL_WIDTH = 4,
 	parameter CTRL_SIZE = 21
 )( 
-	input logic clk, rstn,
+	input logic clk50, rstn,
 	output logic [6:0] out1, out2, out3, out4, out5, out6, out7	// 7 segment outputs
 );	
 	logic [REG_WIDTH-1:0] x5, x6, x11;
+	logic clk;
+	// x5, x6, x11: registers
 	
-	// x5, x6: registers
-	// mem1 : memory address 64
+	clock_divide_half clk_divide (.*);
 	
 	riscv_pipelined_processor #(.REG_WIDTH(REG_WIDTH), 
 				  .REG_COUNT(REG_COUNT),
