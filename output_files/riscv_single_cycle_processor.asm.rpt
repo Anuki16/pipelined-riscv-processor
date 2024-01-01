@@ -1,5 +1,5 @@
 Assembler report for riscv_single_cycle_processor
-Mon Jan 01 19:15:48 2024
+Mon Jan 01 21:15:30 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Jan 01 19:15:48 2024 ;
+; Assembler Status      ; Successful - Mon Jan 01 21:15:30 2024 ;
 ; Revision Name         ; riscv_single_cycle_processor          ;
 ; Top-level Entity Name ; processor_fpga                        ;
 ; Family                ; Cyclone IV E                          ;
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                                                                                                          ;
 +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00B17574                                                                                                                                                                                       ;
-; Checksum       ; 0x00B17574                                                                                                                                                                                       ;
+; JTAG usercode  ; 0x00B23869                                                                                                                                                                                       ;
+; Checksum       ; 0x00B23869                                                                                                                                                                                       ;
 +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jan 01 19:15:41 2024
+    Info: Processing started: Mon Jan 01 21:15:26 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off riscv_single_cycle_processor -c riscv_single_cycle_processor
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4712 megabytes
-    Info: Processing ended: Mon Jan 01 19:15:48 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4715 megabytes
+    Info: Processing ended: Mon Jan 01 21:15:30 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
 
 

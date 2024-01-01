@@ -21,14 +21,20 @@ module inst_memory #(parameter NUM_INST = 128)
 	assign memory[7] = 32'b00000000100000101101010110000011;			// lhu x11, 8(x5)	-> x11 = 8123
 	assign memory[8] = 32'b00000000000000101101011000000011;			// lhu x12, 0(x5)	-> x12 = 8123
 	assign memory[9] = 32'b0;													// nop
-	assign memory[10] = 32'b0000000_01100_01011_000_10000_1100011;	// beq x11, x12, 16		remember to change this if you remove the nops
-	assign memory[11] = 32'b0;													// nop
-	assign memory[12] = 32'b0;													// nop
-	assign memory[13] = 32'b00000000110000101000001010010011;		// addi x5 x5 12	
-	assign memory[14] = 32'b0100000_00101_00111_111_00101_0110011;	// mul x5 x7 x5	-> x5 = 240 = 0xF0
+	assign memory[10] = 32'b0000000_01100_01011_000_10000_1100011;	// beq x11, x12, 8		remember to change this if you remove the nops
+	assign memory[11] = 32'b00000000110000101000001010010011;		// addi x5 x5 12	
+	assign memory[12] = 32'b0100000_00101_00111_111_00101_0110011;	// mul x5 x7 x5	-> x5 = 240 = 0xF0
+	
+	assign memory[13]= 32'b00000000000000000000001100010011;         //addi x6, x0, 0         -> load i=0 to r2 
+	assign memory[14]= 32'b00000000001100000000000010010011;         //addi x1, x0, 3         -> load 3 to r1
+	assign memory[15]= 32'b00000000000000000000000110010011;         //addi x3, x0, 0          -> load a=0 to r3 
+	assign memory[16]= 32'b00000000000100011000000110010011;         //addi r3,r3,1    ->a++
+	assign memory[17] = 32'b00000000000100110000001100010011;         //addi r6,r6,1    ->i++
+	assign memory[18]= 32'b11111110000100110100110011100011;         //blt r6,r1,-8    ->go to mem 2 by offseting -8
+	assign memory[19] = 32'b00000000001100110000001100110011;         //add x6, x6, x3
 	
 	always_comb begin
-		for (int i = 15; i < NUM_INST; i++) memory[i] = 32'b0;
+		for (int i = 20; i < NUM_INST; i++) memory[i] = 32'b0;
 	end
 	
 endmodule

@@ -21,8 +21,8 @@ module fetch #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) fetch_dec_reg <= 'b0;
+		else if (~stall & flush) fetch_dec_reg <= 'b0;
 		else if (~stall) fetch_dec_reg <= {instruction, pc, out_pred};	
-		else if (flush) fetch_dec_reg <= 'b0;
 	end	
 	
 endmodule

@@ -42,8 +42,8 @@ module decode #(
 	
 	always @(posedge clk or negedge rstn) begin
 		if (~rstn) dec_exc_reg <= 'b0;
+		else if (~stall & flush) dec_exc_reg <= 'b0;
 		else if (~stall) dec_exc_reg <= {read_reg1, read_reg2, rd, ctrl_signals, read_data1, read_data2, imm_data, pc, pred};
-		else if (flush) dec_exc_reg <= 'b0;
 	end
 	
 endmodule

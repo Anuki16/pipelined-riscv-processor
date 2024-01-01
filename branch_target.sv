@@ -33,12 +33,14 @@ module branch_target (
 
     assign next_pc = (pred & is_branch_inst) ? branch_target : fpc+4;
 	 
-	 assign BTB[10] = (10 + 4) << 2;	// instruction 10 is a branch instruction, target address is 16
+	 assign BTB[10] = (10 + 2) << 2;	// instruction 10 is a branch instruction, target address is 16
+	 assign BTB[18] = (18 - 2) << 2;
 	 assign BTB_valid[10] = 1'b1;
+	 assign BTB_valid[18] = 1'b1;
 	 
 	 always_comb begin
 		for (int i = 0; i < BTB_SIZE; i++) begin
-			if (i != 10) begin
+			if (i != 10 && i != 18) begin
 				BTB[i] = 32'b0;
 				BTB_valid[i] = 1'b0;
 			end
