@@ -14,7 +14,7 @@ module top_tb();
 	localparam ALU_SEL_WIDTH = 4;
 	localparam CTRL_SIZE = 21;
 	
-	logic [REG_WIDTH-1:0] x5, x6, mem1;
+	logic [REG_WIDTH-1:0] x5, x6, x11;
 	
 	riscv_pipelined_processor #(.REG_WIDTH(REG_WIDTH), 
 				  .REG_COUNT(REG_COUNT),

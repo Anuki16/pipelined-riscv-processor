@@ -4,8 +4,8 @@ module set_assc_cache #(
 	parameter ADDR_WIDTH = 32,
 	parameter DATA_WIDTH = 32,
 	parameter CACHE_LINE_SIZE = 16,	// bytes
-	parameter NUM_MEM_BYTES = 1024,
-	parameter NUM_CACHE_LINES = 8,
+	parameter NUM_MEM_BYTES = 256,
+	parameter NUM_CACHE_LINES = 4,
 	parameter CACHE_SET_SIZE = 2,
 	parameter MEM_ADDR_WIDTH = $clog2((NUM_MEM_BYTES / CACHE_LINE_SIZE))	// line address
 )(	

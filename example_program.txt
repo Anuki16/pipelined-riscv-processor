@@ -1,0 +1,7 @@
+assign memmory[0]=00000000000000000000001100010011;         //addi x6, x0, 0         -> load i=0 to r2 
+assign memmory[1]=00000000001100000000000010010011;         //addi x1, x0, 3         -> load 3 to r1
+assign memmory[2]=00000000000000000000000110010011;         //addi x3, x0, 0          -> load a=0 to r3 
+assign memmory[3]=00000000000100110100001001100011;         //blt r6,r1,4     ->go to mem 2 by offseting 4
+assign memmory[4]=00000000000100011000000110010011;         //addi r3,r3,1    ->a++
+assign memmory[5]=00000000000100110000001100010011;         //addi r6,r6,1    ->i++
+assign memmory[6]=11111110000100110100110011100011;         //blt r6,r1,-8    ->go to mem 2 by offseting -8

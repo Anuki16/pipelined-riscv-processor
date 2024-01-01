@@ -8,12 +8,13 @@ module riscv_pipelined_processor #(
 	parameter CTRL_SIZE = 21,
 	parameter REG_BITS = $clog2(REG_COUNT)
 )( 
-	input logic clk, rstn
+	input logic clk, rstn,
+	output logic [REG_WIDTH-1:0] x5, x6, x11			// FPGA outputs
 );
 	/* Intermediate variables */
 	logic alu_zero;
 	logic [2:0] branch_type;
-	logic [31:0] target_pc, pc_with_offset;
+	logic [31:0] prev_pc, target_pc, pc_with_offset;
 	
 	logic write_en;
 	logic [REG_BITS-1:0] write_reg;
@@ -22,8 +23,8 @@ module riscv_pipelined_processor #(
 	logic [REG_WIDTH-1:0] wb_data_ex_mem, wb_data_mem_wb;
 	
 	/* Pipeline registers */
-	localparam FETCH_DEC_SIZE = 64;
-	localparam DEC_EXC_SIZE = REG_BITS*3 + CTRL_SIZE + REG_WIDTH*3 + 32;
+	localparam FETCH_DEC_SIZE = 65;
+	localparam DEC_EXC_SIZE = REG_BITS*3 + CTRL_SIZE + REG_WIDTH*3 + 32 + 1;
 	localparam EXC_MEM_SIZE = REG_BITS + 1 + CTRL_SIZE-7 + REG_WIDTH*3;
 	localparam MEM_WB_SIZE = 1 + REG_BITS + REG_WIDTH*3 + 2;
 	
@@ -37,7 +38,7 @@ module riscv_pipelined_processor #(
 	logic regWrEn, regWrEn_mem;
 	logic [1:0] forward_A, forward_B;
 	
-	logic stall;
+	logic stall, flush, prev_pred;
 
 	/* Pipeline stages */
 	

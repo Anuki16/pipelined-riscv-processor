@@ -22,7 +22,7 @@ module datapath_mem #(
 	logic signed [REG_WIDTH-1:0] read_data1, read_data2, write_data, imm_data, imm_sel_data;
 	logic signed [REG_WIDTH-1:0] bus_a, bus_b, alu_out;
 	logic alu_zero, alu_neg, stall;
-	logic [REG_WIDTH-1:0] mem_addr; 
+	logic [REG_WIDTH-1:0] mem_addr, x5, x6, x11; 
 	logic signed [REG_WIDTH-1:0] mem_write_data, mem_read_data;
 	logic [31:0] pc, target_pc, return_pc, pc_with_offset;
 	logic [REG_BITS-1:0] rs1, rs2, rd;

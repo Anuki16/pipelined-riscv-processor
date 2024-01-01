@@ -8,7 +8,7 @@ module regfile_tb();
 	logic clk = 0;
 	logic rstn = 1;
 	logic signed [31:0] read_data1, read_data2;
-	logic [31:0] x5, x6;
+	logic [31:0] x5, x6, x11;
 	
 	regfile dut(.*);
 	

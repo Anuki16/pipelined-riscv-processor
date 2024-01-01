@@ -1,0 +1,11 @@
+
+module pccalc_pred (
+	input logic clk, rstn, stall,
+	input logic [31:0] pc_with_offset,		// For branch and JAL
+	input logic [31:0] target_pc,	// For JALR, already calculated PC
+	
+	input logic [2:0] branch_type,
+	input logic alu_zero,
+	
+	output logic [31:0] pc		// PC register
+);

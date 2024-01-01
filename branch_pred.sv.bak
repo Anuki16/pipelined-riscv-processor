@@ -1,0 +1,64 @@
+module branch_pred_unit(
+    input logic clk, rstn,branch_taken, 
+    input logic [31:0] epc,fpc,
+    output logic pred,flush,
+
+);  
+
+logic [2:0] LHT [7:0];
+logic [1:0] LPT [7:0];
+logic [2:0] pLHT_val,nLHT_val;
+int pLHT_index,nLHT_index;
+logic [1:0] pLPT_val,nLPT_val;
+int pindex,nindex;
+
+
+// Always block to update the LHT and LPT
+always_ff @(posedge clk or negedge rstn) begin
+    if (!rstn) begin
+        // Loop through each entry and set them to zeros
+        for (int i = 0; i < 8; i++) begin
+            LHT[i] = 3'b000;
+            LPT[i] = 2'b00;
+            pred   = 1'b0;
+        end
+    end else begin
+        // Get the index of the LHT
+        pindex = epc[2:0];
+        pLHT_val = LHT[pindex];
+        pLHT_index=pLHT_val;
+        pLPT_val = LPT[pLHT_index];
+
+        // Update the LPT of previous branch
+        if(pLPT_val == 2'b00) begin
+            LPT[pLHT_index] = branch_taken ? 2'b01 : 2'b00;
+        end else if (pLPT_val == 2'b01) begin
+            LPT[pLHT_index] = branch_taken ? 2'b11 : 2'b00;
+        end else if (pLPT_val == 2'b10) begin
+            LPT[pLHT_index] = branch_taken ? 2'b11 : 2'b00;
+        end else begin
+            LPT[pLHT_index] = branch_taken ? 2'b11 : 2'b10;
+        end
+
+        // Update the LHT of previous branch
+        LHT[pindex]={branch_taken,pLHT_val[1:0]};
+        flush = (((pLPT_val == 2'b00) |(pLPT_val ==2'b01 )) ? 0 : 1) ^ branch_taken;
+
+        // Get the index of the LPT
+        nindex=fpc[2:0];
+        nLHT_val = LHT[nindex];
+        nLHT_index=nLHT_val;
+        nLPT_val = LPT[nLHT_index];
+        
+        // Assign the prediction
+        if((nLPT_val == 2'b00) |(nLPT_val ==2'b01 )) begin
+            pred =0;
+        end else begin
+            pred =1;
+        end
+
+    end
+
+end
+
+endmodule

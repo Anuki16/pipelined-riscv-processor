@@ -1,0 +1,51 @@
+`include "branch_pred.sv"
+
+module branch_target_buffer (
+    input logic clk, rstn, branch_taken,
+    input logic [31:0] epc,fpc,
+    output logic [31:0] next,
+    output logic flush
+);
+
+    // Parameters for the BTB
+    parameter int BTB_SIZE = 32; // Adjust the size as needed
+    parameter int INDEX_BITS = $clog2(BTB_SIZE);
+
+    int index = fpc[INDEX_BITS:0];
+    logic [32:0] BTB [INDEX_BITS:0];
+    logic [32:0] branch_target;
+    logic pred,hit,sel;
+
+    branch_pred_unit bpu(
+        .clk(clk),
+        .rstn(rstn),
+        .branch_taken(branch_taken),
+        .epc(epc),
+        .fpc(fpc),
+        .pred(pred),
+        .flush(flush)
+    );
+
+    assign branch_target = BTB[index];
+    assign hit = (BTB[index] == fpc) ? 1:0;
+    assign sel = hit & branch_taken;
+
+
+    always_ff @(posedge clk or negedge rstn) begin
+        if (!rstn) begin
+            // Reset the BTB on reset
+            for (int i = 0; i < BTB_SIZE; i++) begin
+                BTB[i] = 32'b0000_0000_0000_0000;
+            end
+
+        if (branch_taken) begin
+            BTB[index] = fpc;
+        end
+
+        case (sel)
+            1'b0:  next_pc=branch_target;
+            default: next_pc=fpc+4;
+        endcase
+    end
+
+endmodule
