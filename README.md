@@ -1,3 +1,10 @@
-# 32-bit non-pipelined RISC-V processor
+# 32-bit pipelined RISC-V processor
 
-This is an implementation of the computational, memory access and control flow instructions of the RV32I instruction set. 
+Pipelined version of the single cycle RISC-V processor implemented in https://github.com/Anuki16/single-cycle-riscv-processor.
+
+Features:
+- Data forwarding
+- Branch prediction
+- Set associative cache
+
+
